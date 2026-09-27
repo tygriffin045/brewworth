@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { categories } from "@/data/categories";
-import { AFFILIATE_DISCLOSURE_SHORT } from "@/lib/affiliate";
 
 export function Footer() {
   return (
@@ -11,15 +10,6 @@ export function Footer() {
           <p className="mt-2 text-sm text-[#a89078]">
             Honest picks for better home coffee. We research espresso gear so
             you can brew café-quality drinks without the hype.
-          </p>
-          <p className="mt-4 text-xs leading-relaxed text-[#7a6555]">
-            {AFFILIATE_DISCLOSURE_SHORT}{" "}
-            <Link
-              href="/affiliate-disclosure"
-              className="underline underline-offset-2 hover:text-[#d4c4b0]"
-            >
-              Full disclosure
-            </Link>
           </p>
         </div>
         <div>
@@ -71,7 +61,7 @@ export function Footer() {
         </div>
       </div>
       <div className="border-t border-[#3d2314] py-4 text-center text-xs text-[#5c4a3a]">
-        © {new Date().getFullYear()} BrewWorth. As an Amazon Associate we earn
+        © {new Date().getFullYear()} BrewWorth. As an Amazon Associate I earn
         from qualifying purchases.
       </div>
     </footer>

@@ -268,7 +268,7 @@ export default async function ProductPage({ params }: Props) {
           amazonAsin={product.amazonAsin}
           amazonQuery={product.amazonQuery}
           label="Check price on Amazon"
-          className="[&_a]:min-h-11 [&_a]:w-full [&_a]:py-3 [&_a]:text-center [&_p]:hidden"
+          className="[&_a]:min-h-11 [&_a]:w-full [&_a]:py-3 [&_a]:text-center"
         />
       </div>
       <div className="h-20 md:hidden" aria-hidden />

@@ -3,6 +3,7 @@ import { DEFAULT_OG_IMAGE } from "@/lib/site";
 import Link from "next/link";
 import { getProduct } from "@/data/products";
 import { AffiliateButton } from "@/components/AffiliateButton";
+import { DisclosureLine } from "@/components/DisclosureLine";
 
 export const metadata: Metadata = {
   title: "Espresso machine comparison",
@@ -86,6 +87,7 @@ export default function ComparePage() {
         </Link>{" "}
         for context.
       </p>
+      <DisclosureLine className="mt-3" />
 
       <div className="mt-10 overflow-x-auto rounded-2xl border border-stone-200 bg-white">
         <table className="min-w-[720px] w-full text-left text-sm">

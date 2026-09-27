@@ -5,7 +5,6 @@ import { categories } from "@/data/categories";
 import { getFeaturedProducts } from "@/data/products";
 import { guides } from "@/data/guides";
 import { ProductCard } from "@/components/ProductCard";
-import { TrustStrip } from "@/components/TrustStrip";
 import { DisclosureLine } from "@/components/DisclosureLine";
 
 export const metadata: Metadata = {
@@ -55,8 +54,8 @@ export default function HomePage() {
           </h1>
           <p className="mt-4 text-lg text-[#4a3728]">
             BrewWorth is an expert coffee niche guide: espresso machines,
-            grinders, pour-over, and travel kits with clear verdicts, honest
-            cons, and Amazon Associate links — no invented brand scores.
+            grinders, pour-over, and travel kits with clear verdicts and honest
+            cons — no invented brand scores.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <Link
@@ -181,8 +180,6 @@ export default function HomePage() {
           ))}
         </div>
       </section>
-
-      <TrustStrip />
 
       <section>
         <h2 className="font-serif text-3xl text-[#2a1a12]">Buying guides</h2>
