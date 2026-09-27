@@ -48,6 +48,22 @@ export interface Category {
   shortLabel: string;
 }
 
+export interface GuidePick {
+  productSlug: string;
+  /** Short award label, e.g. "Best overall" */
+  label: string;
+  /** One-line verdict shown in the quick-pick summary */
+  verdict: string;
+  pros: string[];
+  cons: string[];
+  bestFor: string;
+}
+
+export interface GuideFaq {
+  question: string;
+  answer: string;
+}
+
 export interface Guide {
   slug: string;
   title: string;
@@ -56,4 +72,17 @@ export interface Guide {
   publishedAt: string;
   productSlugs: string[];
   sections: { heading: string; body: string }[];
+  /** Optional SEO overrides (fall back to title/description) */
+  metaTitle?: string;
+  metaDescription?: string;
+  /** Optional short intro shown under the H1 instead of description */
+  intro?: string;
+  /** Optional ranked picks with pros/cons — renders quick-pick summary + detailed reviews */
+  picks?: GuidePick[];
+  /** Optional buying-criteria bullets */
+  criteria?: { heading: string; points: { title: string; body: string }[] };
+  /** Optional internal "see also" links */
+  seeAlso?: { href: string; label: string }[];
+  /** Optional FAQ — renders on page and as FAQPage JSON-LD */
+  faqs?: GuideFaq[];
 }

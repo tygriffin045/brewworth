@@ -33,6 +33,9 @@ export const metadata: Metadata = {
 export default function HomePage() {
   const featured = getFeaturedProducts().slice(0, 6);
   const topGuides = [
+    "best-espresso-machine-with-built-in-grinder",
+    "breville-bambino-vs-bambino-plus",
+    "best-pour-over-grinder-under-200",
     "best-espresso-machines-under-400",
     "espresso-machine-buying-guide",
     "best-espresso-grinders",

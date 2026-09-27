@@ -39,6 +39,20 @@ const CATEGORY_GUIDE_LINKS: Record<string, string> = {
   "cleaning-maintenance": "/guides/cleaning-maintenance-essentials",
 };
 
+/** Extra high-intent guides surfaced on specific category pages. */
+const CATEGORY_SPOTLIGHT_GUIDES: Record<string, { href: string; label: string }[]> = {
+  "espresso-machines": [
+    { href: "/guides/breville-bambino-vs-bambino-plus", label: "Bambino vs Bambino Plus" },
+    { href: "/guides/best-espresso-machine-with-built-in-grinder", label: "Best machines with a built-in grinder" },
+  ],
+  grinders: [
+    { href: "/guides/best-pour-over-grinder-under-200", label: "Best pour-over grinder under $200" },
+  ],
+  "pour-over": [
+    { href: "/guides/best-pour-over-grinder-under-200", label: "Best pour-over grinder under $200" },
+  ],
+};
+
 export function generateStaticParams() {
   return categories.map((c) => ({ slug: c.slug }));
 }
@@ -134,6 +148,17 @@ export default async function CategoryPage({ params }: Props) {
             </Link>
           </>
         )}
+        {(CATEGORY_SPOTLIGHT_GUIDES[slug] ?? []).map((g) => (
+          <span key={g.href} className="contents">
+            <span>·</span>
+            <Link
+              href={g.href}
+              className="font-medium text-[#6b3410] underline underline-offset-2"
+            >
+              {g.label}
+            </Link>
+          </span>
+        ))}
       </div>
 
       {featured.length > 0 && (

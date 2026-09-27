@@ -1,6 +1,8 @@
 import type { Guide } from "./types";
+import { buyerIntentGuides } from "./guides-buyer-intent";
 
 export const guides: Guide[] = [
+  ...buyerIntentGuides,
   {
     slug: "best-espresso-machines-under-400",
     title: "Best Espresso Machines Under $400 for Beginners",
