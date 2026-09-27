@@ -1,4 +1,4 @@
-export const SITE_URL = "https://brewworth.vercel.app";
+export const SITE_URL = "https://brew.theworthguide.com";
 export const SITE_NAME = "BrewWorth";
 export const SITE_TITLE = "BrewWorth — Honest picks for better home coffee";
 export const SITE_DESCRIPTION =

@@ -3,7 +3,7 @@ import { Source_Sans_3, Source_Serif_4 } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-import { DEFAULT_OG_IMAGE } from "@/lib/site";
+import { DEFAULT_OG_IMAGE, SITE_URL } from "@/lib/site";
 import "./globals.css";
 
 const sans = Source_Sans_3({
@@ -18,7 +18,6 @@ const serif = Source_Serif_4({
   display: "swap",
 });
 
-const SITE_URL = "https://brewworth.vercel.app";
 const SITE_TITLE = "BrewWorth — Honest picks for better home coffee";
 const SITE_DESCRIPTION =
   "Editorial reviews and buying guides for espresso machines, grinders, kettles, scales, frothers, and home barista accessories.";

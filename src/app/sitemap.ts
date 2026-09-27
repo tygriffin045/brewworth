@@ -1,9 +1,10 @@
 import type { MetadataRoute } from "next";
+import { SITE_URL } from "@/lib/site";
 import { products } from "@/data/products";
 import { guides } from "@/data/guides";
 import { categories } from "@/data/categories";
 
-const BASE = "https://brewworth.vercel.app";
+const BASE = SITE_URL;
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();

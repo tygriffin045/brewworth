@@ -73,7 +73,7 @@ d.text(
     font=font(SANS, 26, 500),
     fill=MUTED,
 )
-d.text((x, 540), "brewworth.vercel.app", font=font(SANS, 24, 600), fill=CREMA)
+d.text((x, 540), "brew.theworthguide.com", font=font(SANS, 24, 600), fill=CREMA)
 
 img.convert("RGB").save(OUT, "JPEG", quality=88, optimize=True, progressive=True)
 print(f"wrote {OUT} {Image.open(OUT).size}")
