@@ -88,6 +88,15 @@ export default function HomePage() {
       <TopRail />
 
       <section>
+        <h2 className="font-serif text-3xl text-stone-900">Vs reviews</h2>
+        <p className="mt-1 text-stone-600">Three machines, one counter. The winner depends on whether you want a boiler or a button.</p>
+        <div className="mt-6 grid gap-4 md:grid-cols-2">
+          <a href="/compare" className="rounded-2xl border border-stone-200 bg-white p-5 hover:border-stone-400">Breville Bambino Plus vs Gaggia Classic Pro vs De'Longhi Dedica</a>
+        </div>
+      </section>
+
+
+      <section>
         <div className="flex items-end justify-between gap-4">
           <div>
             <h2 className="font-serif text-3xl text-[#2a1a12]">
