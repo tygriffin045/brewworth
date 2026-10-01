@@ -5,6 +5,7 @@ import { categories } from "@/data/categories";
 import { getFeaturedProducts } from "@/data/products";
 import { guides } from "@/data/guides";
 import { ProductCard } from "@/components/ProductCard";
+import { TopRail } from "@/components/TopRail";
 import { DisclosureLine } from "@/components/DisclosureLine";
 
 export const metadata: Metadata = {
@@ -83,6 +84,8 @@ export default function HomePage() {
           <DisclosureLine className="mt-5" />
         </div>
       </section>
+
+      <TopRail />
 
       <section>
         <div className="flex items-end justify-between gap-4">
