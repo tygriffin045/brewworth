@@ -3520,6 +3520,8 @@ export const products: Product[] = [
     whoItsFor: "People who buy coffee by the bag and brew slowly.",
     specs: [{ label: "Job", value: "Storage" }],
     relatedSlugs: [],
+    amazonAsin: "B07PWY7R6S",
+    imageUrl: "https://m.media-amazon.com/images/P/B07PWY7R6S.01._SCLZZZZZZZ_.jpg",
     amazonQuery: "Fellow Atmos coffee canister",
   }
 ];
