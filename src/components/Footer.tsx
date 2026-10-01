@@ -6,7 +6,7 @@ export function Footer() {
     <footer className="mt-24 border-t border-amber-900/20 bg-[#2a1a12] text-[#d4c4b0]">
       <div className="mx-auto grid max-w-6xl gap-10 px-4 py-14 sm:px-6 md:grid-cols-3">
         <div>
-          <p className="font-serif text-2xl text-[#f6efe6]">BrewWorth</p>
+          <p className="font-serif text-2xl text-[#f6efe6]">Brew<span className="text-[#d4af37]">Worth</span></p>
           <p className="mt-2 text-sm text-[#a89078]">
             Honest picks for better home coffee. We research espresso gear so
             you can brew café-quality drinks without the hype.
