@@ -53,5 +53,11 @@ export const categories: Category[] = [
 ];
 
 export function getCategory(slug: string): Category | undefined {
-  return categories.find((c) => c.slug === slug);
-}
+  return categories.find((c) => c.slug === slug);,
+  {
+    slug: "coffee-storage",
+    name: "Coffee Storage",
+    shortLabel: "Storage",
+    description: "Airtight canisters and vacuum containers that keep beans from going stale in a week.",
+  },
+];
