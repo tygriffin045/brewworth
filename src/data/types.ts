@@ -1,4 +1,5 @@
 export type CategorySlug =
+  | "coffee-canisters"
   | "espresso-machines"
   | "grinders"
   | "kettles-scales"
