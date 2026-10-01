@@ -3499,7 +3499,29 @@ export const products: Product[] = [
     specs: [{ label: "Job", value: "Bean storage" }],
     relatedSlugs: [],
   },
+,
 
+  {
+    slug: "fellow-atmos",
+    name: "Fellow Atmos canister",
+    brand: "Fellow",
+    category: "coffee-canisters",
+    tagline: "A vacuum canister for beans you will not finish this week.",
+    summary: "Worth it if you buy bags faster than you brew them.",
+    priceBand: "About $40",
+    budget: "mid",
+    priceMin: 35,
+    priceMax: 50,
+    imageGradient: "from-stone-200 to-amber-100",
+    imageAlt: "Fellow Atmos coffee canister",
+    featured: false,
+    pros: ["Vacuum lid", "Clear fill line"],
+    cons: ["Not a grinder", "One bag at a time"],
+    whoItsFor: "People who buy coffee by the bag and brew slowly.",
+    specs: [{ label: "Job", value: "Storage" }],
+    relatedSlugs: [],
+    amazonQuery: "Fellow Atmos coffee canister",
+  }
 ];
 
 export function getProduct(slug: string): Product | undefined {
