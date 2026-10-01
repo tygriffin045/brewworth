@@ -3477,6 +3477,29 @@ export const products: Product[] = [
       "acaia-pearl"
     ]
   }
+
+  {
+    slug: "fellow-atmos-canister",
+    name: "Fellow Atmos vacuum canister",
+    brand: "Fellow",
+    category: "coffee-storage",
+    tagline: "Vacuum canister for a week of beans",
+    summary: "A canister that pulls air out so an opened bag does not sit in the cabinet. It does not replace buying smaller bags.",
+    priceBand: "About $40",
+    budget: "mid",
+    priceMin: 30,
+    priceMax: 50,
+    imageGradient: "from-stone-700 via-amber-900 to-stone-900",
+    imageAlt: "Fellow Atmos coffee canister",
+    featured: false,
+    amazonQuery: "Fellow Atmos vacuum coffee canister",
+    pros: ["Vacuum pump in the lid", "Clear fill line", "Fits a typical 12 oz bag"],
+    cons: ["Glass can break", "Not a substitute for fresh beans", "Lid seal needs to be clean"],
+    whoItsFor: "People who buy beans faster than they finish them.",
+    specs: [{ label: "Job", value: "Bean storage" }],
+    relatedSlugs: [],
+  },
+
 ];
 
 export function getProduct(slug: string): Product | undefined {
