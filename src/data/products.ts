@@ -3476,8 +3476,7 @@ export const products: Product[] = [
       "timemore-black-mirror",
       "acaia-pearl"
     ]
-  }
-
+  },
   {
     slug: "fellow-atmos-canister",
     name: "Fellow Atmos vacuum canister",
@@ -3499,8 +3498,6 @@ export const products: Product[] = [
     specs: [{ label: "Job", value: "Bean storage" }],
     relatedSlugs: [],
   },
-,
-
   {
     slug: "fellow-atmos",
     name: "Fellow Atmos canister",

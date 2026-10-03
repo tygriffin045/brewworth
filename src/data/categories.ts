@@ -49,17 +49,13 @@ export const categories: Category[] = [
     shortLabel: "Cleaning",
     description:
       "Backflush detergent, descaler, blind baskets, and the unsexy kit that keeps shots sweet and valves healthy.",
-  },,
+  },
   {
     slug: "coffee-canisters",
     name: "Coffee Canisters",
     shortLabel: "Canisters",
     description: "Storage that keeps an open bag from going stale before you finish it.",
   },
-];
-
-export function getCategory(slug: string): Category | undefined {
-  return categories.find((c) => c.slug === slug);,
   {
     slug: "coffee-storage",
     name: "Coffee Storage",
@@ -67,3 +63,7 @@ export function getCategory(slug: string): Category | undefined {
     description: "Airtight canisters and vacuum containers that keep beans from going stale in a week.",
   },
 ];
+
+export function getCategory(slug: string): Category | undefined {
+  return categories.find((c) => c.slug === slug);
+}
