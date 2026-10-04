@@ -32,7 +32,7 @@ export function AffiliateButton({
         href={href}
         target="_blank"
         rel="nofollow sponsored noopener noreferrer"
-        className="inline-flex w-full items-center justify-center rounded-full bg-[#8b4513] px-5 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-[#6b3410] sm:w-auto"
+        className="inline-flex w-full items-center justify-center rounded-full bg-[#c45c26] px-5 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-[#6b3410] sm:w-auto"
         onClick={() =>
           track("amazon_outbound_click", {
             product_slug: productSlug,

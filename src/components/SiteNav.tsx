@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import {
   useCallback,
   useEffect,
@@ -144,7 +145,7 @@ export function SiteNav() {
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 sm:px-6">
         <Link href="/" className="group flex shrink-0 items-baseline gap-2">
           <span className="font-serif text-xl font-semibold tracking-tight text-[#2a1a12] sm:text-2xl">
-            <svg aria-hidden viewBox="0 0 24 24" className="mr-1.5 inline h-5 w-5 align-[-2px]" fill="none" stroke="#d4af37" strokeWidth="1.8"><circle cx="12" cy="12" r="9"/><path d="M7.5 12.2 10.6 15.3 16.5 8.8" strokeLinecap="round" strokeLinejoin="round"/></svg>Brew<span className="text-[#d4af37]">Worth</span>
+            <svg aria-hidden viewBox="0 0 24 24" className="mr-1.5 inline h-5 w-5 align-[-2px]" fill="none" stroke="#d4af37" strokeWidth="1.8"><circle cx="12" cy="12" r="9"/><path d="M7.5 12.2 10.6 15.3 16.5 8.8" strokeLinecap="round" strokeLinejoin="round"/></svg>Brew<span className="text-[#8a6a22]">Worth</span>
           </span>
           <span className="hidden text-xs text-[#f6efe6]0 sm:inline">
             home coffee picks
@@ -231,6 +232,7 @@ export function SiteNav() {
           <NavLink href="/compare">Compare</NavLink>
           <NavLink href="/guides">Guides</NavLink>
           <NavLink href="/products">All products</NavLink>
+          <NavLink href="https://theworthguide.com/">The Worth Guide</NavLink>
         </nav>
 
         <div className="flex items-center gap-2 text-sm sm:gap-3">
@@ -337,6 +339,15 @@ export function SiteNav() {
                   </li>
                   <li>
                     <Link
+                      href="https://theworthguide.com/"
+                      className="block rounded-lg px-3 py-2.5 font-medium text-[#3d2a1e] hover:bg-[#ebe0d2]/70"
+                      onClick={closeMobile}
+                    >
+                      The Worth Guide
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
                       href="/products"
                       className="block rounded-lg px-3 py-2.5 font-medium text-[#3d2a1e] hover:bg-[#ebe0d2]/70"
                       onClick={closeMobile}
@@ -400,10 +411,13 @@ function NavLink({
   href: string;
   children: React.ReactNode;
 }) {
+  const pathname = usePathname();
+  const active = href.startsWith("/") && (pathname === href || pathname.startsWith(href + "/"));
   return (
     <Link
       href={href}
-      className="rounded-md px-2.5 py-1.5 hover:bg-[#ebe0d2]/70 hover:text-[#2a1a12]"
+      aria-current={active ? "page" : undefined}
+      className={active ? "rounded-md bg-[#2a1a12] px-2.5 py-1.5 text-[#f6efe6]" : "rounded-md px-2.5 py-1.5 hover:bg-[#ebe0d2]/70 hover:text-[#2a1a12]"}
     >
       {children}
     </Link>
