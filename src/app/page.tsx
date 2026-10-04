@@ -6,7 +6,6 @@ import { getFeaturedProducts } from "@/data/products";
 import { guides } from "@/data/guides";
 import { ProductCard } from "@/components/ProductCard";
 import { TopRail } from "@/components/TopRail";
-import { DisclosureLine } from "@/components/DisclosureLine";
 
 export const metadata: Metadata = {
   title: {
@@ -81,7 +80,6 @@ export default function HomePage() {
               Top buying guides
             </Link>
           </div>
-          <DisclosureLine className="mt-5" />
         </div>
       </section>
 

@@ -7,7 +7,6 @@ import { getGuide, getRelatedGuides, guides } from "@/data/guides";
 import { getProduct } from "@/data/products";
 import { ProductCard } from "@/components/ProductCard";
 import { AffiliateButton } from "@/components/AffiliateButton";
-import { DisclosureLine } from "@/components/DisclosureLine";
 import { JsonLd } from "@/components/JsonLd";
 import { SITE_URL, SITE_NAME } from "@/lib/site";
 
@@ -117,7 +116,6 @@ export default async function GuidePage({ params }: Props) {
       <p className="mt-4 text-lg text-stone-700">
         {guide.intro ?? guide.description}
       </p>
-      <DisclosureLine className="mt-3" />
 
       {picks.length > 0 && (
         <section

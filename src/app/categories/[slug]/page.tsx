@@ -6,7 +6,6 @@ import { categories, getCategory } from "@/data/categories";
 import { getTopPicks } from "@/data/top10";
 import { getGuidesForCategory } from "@/data/guides";
 import { ProductCard } from "@/components/ProductCard";
-import { DisclosureLine } from "@/components/DisclosureLine";
 import { JsonLd } from "@/components/JsonLd";
 import { SITE_URL } from "@/lib/site";
 import { BadgePicks } from "@/components/BadgePicks";
@@ -129,7 +128,6 @@ export default async function CategoryPage({ params }: Props) {
         {category.name}
       </h1>
       <p className="mt-3 max-w-2xl text-stone-600">{intro}</p>
-      <DisclosureLine className="mt-3" />
       <div className="mt-4 flex flex-wrap items-center gap-3 text-sm text-stone-500">
         <Link href="/products" className="underline underline-offset-2">
           All products

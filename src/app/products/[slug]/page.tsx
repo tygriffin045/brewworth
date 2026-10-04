@@ -11,7 +11,6 @@ import { getCategory } from "@/data/categories";
 import { getGuidesForProduct } from "@/data/guides";
 import { AffiliateButton } from "@/components/AffiliateButton";
 import { ProductCard } from "@/components/ProductCard";
-import { DisclosureLine } from "@/components/DisclosureLine";
 import { JsonLd } from "@/components/JsonLd";
 import { SITE_URL } from "@/lib/site";
 
@@ -173,7 +172,6 @@ export default async function ProductPage({ params }: Props) {
             amazonQuery={product.amazonQuery}
             className="mt-6 [&_a]:min-h-11"
           />
-          <DisclosureLine className="mt-3" />
         </div>
       </div>
 
