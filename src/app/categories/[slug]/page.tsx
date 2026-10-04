@@ -3,7 +3,7 @@ import { DEFAULT_OG_IMAGE } from "@/lib/site";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { categories, getCategory } from "@/data/categories";
-import { getProductsByCategory } from "@/data/products";
+import { getTopPicks } from "@/data/top10";
 import { getGuidesForCategory } from "@/data/guides";
 import { ProductCard } from "@/components/ProductCard";
 import { DisclosureLine } from "@/components/DisclosureLine";
@@ -87,7 +87,7 @@ export default async function CategoryPage({ params }: Props) {
   const category = getCategory(slug);
   if (!category) notFound();
 
-  const items = getProductsByCategory(slug);
+  const items = getTopPicks(slug);
   const featured = items.filter((p) => p.featured).slice(0, 3);
   const featuredSlugs = new Set(featured.map((p) => p.slug));
   const rest = items.filter((p) => !featuredSlugs.has(p.slug));
@@ -135,7 +135,7 @@ export default async function CategoryPage({ params }: Props) {
         </Link>
         <span>·</span>
         <span>
-          {items.length} in this category
+          Top {items.length} picks
         </span>
         {primaryGuide && (
           <>

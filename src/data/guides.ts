@@ -78,7 +78,6 @@ export const guides: Guide[] = [
     productSlugs: [
       "baratza-encore-esp",
       "breville-smart-grinder-pro",
-      "fellow-opus",
       "eureka-mignon-specialita",
       "baratza-sette-270wi",
       "capresso-infinity"
@@ -112,13 +111,10 @@ export const guides: Guide[] = [
       "breville-bambino",
       "delonghi-dedica",
       "baratza-encore-esp",
-      "timemore-black-mirror",
       "maestri-espresso-scale",
       "milk-frothing-pitcher",
       "aeropress-original",
-      "fellow-stagg-ekg",
       "subminimal-nanofoamer",
-      "flair-neo-flex",
       "wacaco-nanopresso"
     ],
     sections: [
@@ -152,11 +148,8 @@ export const guides: Guide[] = [
       "clever-dripper",
       "kalita-wave-155",
       "fellow-stagg-xf",
-      "fellow-stagg-ekg",
       "fellow-ode-gen-2",
       "comandante-c40",
-      "timemore-black-mirror",
-      "acaia-pearl"
     ],
     sections: [
       {
@@ -188,7 +181,6 @@ export const guides: Guide[] = [
       "wacaco-picopresso",
       "outin-nano",
       "wacaco-pixapresso",
-      "flair-neo-flex",
       "timemore-chestnut-c3",
       "aeropress-original"
     ],
@@ -292,7 +284,6 @@ export const guides: Guide[] = [
     publishedAt: "2026-09-13",
     productSlugs: [
       "baratza-encore-esp",
-      "fellow-opus",
       "baratza-sette-270wi",
       "eureka-mignon-specialita",
       "breville-bambino"
@@ -392,9 +383,7 @@ export const guides: Guide[] = [
     readingTime: "8 min read",
     publishedAt: "2026-09-17",
     productSlugs: [
-      "timemore-black-mirror",
       "maestri-espresso-scale",
-      "acaia-pearl",
       "baratza-encore-esp",
       "normcore-wdt-tool"
     ],
@@ -431,8 +420,6 @@ export const guides: Guide[] = [
       "aeropress-original",
       "hario-v60-02",
       "chemex-classic-6-cup",
-      "fellow-stagg-ekg",
-      "timemore-black-mirror",
       "timemore-chestnut-c3"
     ],
     sections: [
@@ -466,7 +453,6 @@ export const guides: Guide[] = [
       "espresso-cleaning-tablets",
       "espresso-descaler",
       "blind-basket-58mm",
-      "timemore-grinder-brush",
       "breville-knock-box-mini"
     ],
     sections: [

@@ -20,7 +20,6 @@ export const buyerIntentGuides: Guide[] = [
     publishedAt: "2026-09-27",
     productSlugs: [
       "baratza-encore-esp",
-      "fellow-opus",
       "capresso-infinity",
       "timemore-chestnut-c3",
       "fellow-ode-gen-2",
@@ -44,25 +43,6 @@ export const buyerIntentGuides: Guide[] = [
         ],
         bestFor:
           "Most people. Buy it if you want one electric grinder that will still be running (or be fixable) years from now.",
-      },
-      {
-        productSlug: "fellow-opus",
-        label: "Best design / all-purpose",
-        verdict:
-          "A 40mm conical burr all-rounder with 41+ settings, anti-static tech, and a volumetric dosing lid — the one that looks good on the counter.",
-        pros: [
-          "41+ settings spanning espresso to cold brew",
-          "Anti-static technology and a spouted catch cut down on chaff mess",
-          "Volumetric dosing lid and grind guide under the load-bin lid",
-          "2-year limited warranty (plus a year if you register, per Fellow)",
-        ],
-        cons: [
-          "Price floats around $200; sale pricing makes it a much better deal",
-          "Not the absolute quietest grinder in its class",
-          "Stock can be thin on Amazon — check availability before you plan around it",
-        ],
-        bestFor:
-          "Pour-over drinkers who care about looks and a tidy workflow, and who might dabble in espresso later.",
       },
       {
         productSlug: "capresso-infinity",
