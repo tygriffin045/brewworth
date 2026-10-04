@@ -89,7 +89,7 @@ export const guides: Guide[] = [
       },
       {
         heading: "Baratza Encore ESP: the default recommendation",
-        body: "The Encore ESP brings finer espresso steps to Baratza’s repairable Encore platform. It’s the grinder we point most Bambino and Classic Pro owners toward under ~$250. You’re buying consistency, parts support, and a clear upgrade path without jumping to $700 niche grinders."
+        body: "The Encore ESP brings finer espresso steps to Baratza’s repairable Encore platform. It’s the grinder we point most Bambino and Classic Pro owners toward. You’re buying consistency, parts support, and a clear upgrade path without jumping to high-end niche grinders."
       },
       {
         heading: "When to step up: Opus, Specialita, Sette 270Wi",
@@ -124,7 +124,7 @@ export const guides: Guide[] = [
       },
       {
         heading: "Phase 1: machine + grinder",
-        body: "Path A: Breville Bambino + watch for Encore ESP sales (may nudge over $500 — worth it). Path B: De’Longhi Dedica + Baratza Encore ESP to stay closer to budget. Path C: used/refurb Classic Evo Pro if you find one, but only with a real grinder in the cart. Never spend the whole budget on the machine alone."
+        body: "Path A: Breville Bambino + watch for Encore ESP sales (may nudge past this budget — worth it). Path B: De’Longhi Dedica + Baratza Encore ESP to stay closer to budget. Path C: used/refurb Classic Evo Pro if you find one, but only with a real grinder in the cart. Never spend the whole budget on the machine alone."
       },
       {
         heading: "Phase 2: scale, pitcher, and milk",
@@ -132,7 +132,7 @@ export const guides: Guide[] = [
       },
       {
         heading: "Phase 3: weekend brewers (optional)",
-        body: "An AeroPress covers travel and “I don’t want to pull a shot” mornings for ~$40. A Fellow Stagg EKG is a later pour-over luxury if filter coffee is part of your week. Under $500, finish espresso fundamentals before collecting gear."
+        body: "An AeroPress covers travel and “I don’t want to pull a shot” mornings for little money. A Fellow Stagg EKG is a later pour-over luxury if filter coffee is part of your week. Under $500, finish espresso fundamentals before collecting gear."
       }
     ]
   },
@@ -154,7 +154,7 @@ export const guides: Guide[] = [
     sections: [
       {
         heading: "Pour-over is a system, not a dripper",
-        body: "A $25 V60 with a boiling kettle and grocery grind will taste muddy. The stack that actually works: burr grinder (Ode Gen 2, Comandante, or a solid hand mill), gooseneck kettle with temperature control (Stagg EKG), 0.1g scale with timer, and a dripper that matches your patience. Buy the system once; stop shopping for magic cones."
+        body: "A cheap V60 with a boiling kettle and grocery grind will taste muddy. The stack that actually works: burr grinder (Ode Gen 2, Comandante, or a solid hand mill), gooseneck kettle with temperature control (Stagg EKG), 0.1g scale with timer, and a dripper that matches your patience. Buy the system once; stop shopping for magic cones."
       },
       {
         heading: "Pick your dripper by personality",
@@ -166,7 +166,7 @@ export const guides: Guide[] = [
       },
       {
         heading: "Water, ratios, and expectations",
-        body: "Start around 1:16 coffee-to-water, 200–205°F for medium roasts, and change one variable at a time. Flat-bottom drippers forgive more; V60 punishes uneven pours and bad grind. If your espresso bar already has a scale and kettle, pour-over is a $30 dripper away — not another $500 rabbit hole."
+        body: "Start around 1:16 coffee-to-water, 200–205°F for medium roasts, and change one variable at a time. Flat-bottom drippers forgive more; V60 punishes uneven pours and bad grind. If your espresso bar already has a scale and kettle, pour-over is an inexpensive dripper away — not another $500 rabbit hole."
       }
     ]
   },
@@ -279,7 +279,7 @@ export const guides: Guide[] = [
   {
     slug: "baratza-encore-esp-vs-fellow-opus",
     title: "Baratza Encore ESP vs Fellow Opus",
-    description: "The two most recommended sub-$250 grinders head-to-head — espresso steps, retention, repairability, and who should buy which.",
+    description: "The two most recommended entry burr grinders head-to-head — espresso steps, retention, repairability, and who should buy which.",
     readingTime: "8 min read",
     publishedAt: "2026-09-13",
     productSlugs: [
@@ -291,7 +291,7 @@ export const guides: Guide[] = [
     sections: [
       {
         heading: "Both can do espresso. That’s not the whole story.",
-        body: "Encore ESP and Opus sit in the same cart conversations: first real burr grinder under ~$250 that can reach espresso fineness. ESP leans into Baratza’s repair network and espresso-marked steps. Opus leans into single-dose workflow and kitchen design. Taste differences are real but smaller than the gap from either to a blade grinder."
+        body: "Encore ESP and Opus sit in the same cart conversations: first real burr grinder that can reach espresso fineness. ESP leans into Baratza’s repair network and espresso-marked steps. Opus leans into single-dose workflow and kitchen design. Taste differences are real but smaller than the gap from either to a blade grinder."
       },
       {
         heading: "Choose Encore ESP if…",
@@ -330,11 +330,11 @@ export const guides: Guide[] = [
       },
       {
         heading: "Convenience rung",
-        body: "Bambino Plus (~$500): best milk-auto compact. Barista Express (~$700): classic built-in grinder starter. Barista Pro (~$850): Express workflow with ThermoJet speed. La Specialista (~$700): sensor grind + tamp station + dual heating. These win busy households."
+        body: "Bambino Plus: best milk-auto compact. Barista Express: classic built-in grinder starter. Barista Pro: Express workflow with ThermoJet speed. La Specialista: sensor grind + tamp station + dual heating. These win busy households."
       },
       {
         heading: "Craft rung",
-        body: "Gaggia Classic Evo Pro (~$530) + Encore ESP or Sette 270Wi is the combination we recommend most for people who want 58mm accessories and skill growth. Rancilio Silvia (~$850 machine alone) needs a capable grinder immediately — plan $1,000+ total or wait. Craft setups taste better long-term; they demand more of you daily."
+        body: "Gaggia Classic Evo Pro + Encore ESP or Sette 270Wi is the combination we recommend most for people who want 58mm accessories and skill growth. Rancilio Silvia (machine alone) needs a capable grinder immediately — budget for both or wait. Craft setups taste better long-term; they demand more of you daily."
       },
       {
         heading: "Our picks by buyer type",

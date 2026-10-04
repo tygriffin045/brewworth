@@ -9,6 +9,7 @@ import { ProductCard } from "@/components/ProductCard";
 import { DisclosureLine } from "@/components/DisclosureLine";
 import { JsonLd } from "@/components/JsonLd";
 import { SITE_URL } from "@/lib/site";
+import { BadgePicks } from "@/components/BadgePicks";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -161,6 +162,7 @@ export default async function CategoryPage({ params }: Props) {
         ))}
       </div>
 
+      <BadgePicks category={slug} />
       {featured.length > 0 && (
         <section className="mt-10">
           <h2 className="font-serif text-2xl text-stone-900">Featured picks</h2>

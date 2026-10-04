@@ -1,0 +1,974 @@
+{
+ "generated": "2026-10-04",
+ "method": "Premium = highest-priced well-regarded (rating>=4.3, 50+ ratings) in-stock Top 10 item; Value = lowest-priced well-regarded; Bang for the Buck = middle price band, Amazon Best Seller preferred, then rating. Prices are live amazon.com buy-box prices on the checked date.",
+ "pages": {
+  "espresso-machines": {
+   "site": "brewworth",
+   "page": "espresso-machines",
+   "checked": "2026-10-04",
+   "dropped": [
+    {
+     "asin": "B07XSH4J3M",
+     "slug": "delonghi-la-specialista",
+     "why": "no price/out of stock"
+    }
+   ],
+   "notes": [
+    "manual override: rating>=4.3 rule left only 4 machines; Value set to Breville Bambino (4.0, Best Seller). Gaggia Classic Pro ASIN B07RQ3NL76 resolves to a \"Gaggia RI9380/46 E24\" listing, so it was not used."
+   ],
+   "prices": [
+    {
+     "asin": "B072WZL4ZT",
+     "slug": "delonghi-dedica",
+     "price": 249.0,
+     "rating": 4.0,
+     "ratings": 2358,
+     "bestseller": false
+    },
+    {
+     "asin": "B0B1JPPG2L",
+     "slug": "breville-bambino",
+     "price": 249.95,
+     "rating": 4.0,
+     "ratings": 2649,
+     "bestseller": true
+    },
+    {
+     "asin": "B07JVD78TT",
+     "slug": "breville-bambino-plus",
+     "price": 399.95,
+     "rating": 4.1,
+     "ratings": 2418,
+     "bestseller": true
+    },
+    {
+     "asin": "B07RQ3NL76",
+     "slug": "gaggia-classic-pro",
+     "price": 450.83,
+     "rating": 4.3,
+     "ratings": 3199,
+     "bestseller": true
+    },
+    {
+     "asin": "B086H458MP",
+     "slug": "gaggia-classic-evo-pro",
+     "price": 499.0,
+     "rating": 4.3,
+     "ratings": 3199,
+     "bestseller": false
+    },
+    {
+     "asin": "B00CH9QWOU",
+     "slug": "breville-barista-express",
+     "price": 499.95,
+     "rating": 4.4,
+     "ratings": 27890,
+     "bestseller": true
+    },
+    {
+     "asin": "B07VVMBY4M",
+     "slug": "breville-barista-pro",
+     "price": 629.95,
+     "rating": 4.4,
+     "ratings": 3432,
+     "bestseller": false
+    },
+    {
+     "asin": "B084T3F14B",
+     "slug": "rancilio-silvia",
+     "price": 995.0,
+     "rating": 4.2,
+     "ratings": 116,
+     "bestseller": false
+    },
+    {
+     "asin": "B0C1T4W797",
+     "slug": "breville-barista-touch-impress",
+     "price": 1199.95,
+     "rating": 3.7,
+     "ratings": 813,
+     "bestseller": true
+    }
+   ],
+   "picks": {
+    "premium": {
+     "asin": "B07VVMBY4M",
+     "slug": "breville-barista-pro",
+     "name": "Breville Barista Pro Espresso Machine",
+     "price": 629.95,
+     "line": "Among the highest-end picks in this Top 10, and well rated on Amazon."
+    },
+    "bang": {
+     "asin": "B00CH9QWOU",
+     "slug": "breville-barista-express",
+     "name": "Breville Barista Express Espresso Machine",
+     "price": 499.95,
+     "line": "Mid-priced Amazon Best Seller with far more Amazon ratings than any other machine in this Top 10."
+    },
+    "value": {
+     "asin": "B0B1JPPG2L",
+     "slug": "breville-bambino",
+     "name": "Breville Bambino Espresso Machine",
+     "price": 249.95,
+     "line": "Among the lowest-priced picks in this Top 10, and an Amazon Best Seller."
+    }
+   }
+  },
+  "grinders": {
+   "site": "brewworth",
+   "page": "grinders",
+   "checked": "2026-10-04",
+   "dropped": [
+    {
+     "asin": "B00OXGXW8O",
+     "slug": "breville-smart-grinder-pro",
+     "why": "no price/out of stock"
+    },
+    {
+     "asin": "B0CGTYT12R",
+     "slug": "timemore-chestnut-c3",
+     "why": "not fetched"
+    }
+   ],
+   "notes": [],
+   "prices": [
+    {
+     "asin": "B01MXJI90S",
+     "slug": "hario-skerton-pro",
+     "price": 54.5,
+     "rating": 4.3,
+     "ratings": 2265,
+     "bestseller": false
+    },
+    {
+     "asin": "B07N4KTW38",
+     "slug": "capresso-infinity",
+     "price": 98.0,
+     "rating": 4.4,
+     "ratings": 1695,
+     "bestseller": false
+    },
+    {
+     "asin": "B0BW272XCV",
+     "slug": "baratza-encore-esp",
+     "price": 199.95,
+     "rating": 4.0,
+     "ratings": 1403,
+     "bestseller": true
+    },
+    {
+     "asin": "B07JQ4P976",
+     "slug": "comandante-c40",
+     "price": 267.79,
+     "rating": 4.7,
+     "ratings": 467,
+     "bestseller": true
+    },
+    {
+     "asin": "B075G11F9N",
+     "slug": "baratza-sette-30",
+     "price": 299.95,
+     "rating": 4.3,
+     "ratings": 962,
+     "bestseller": false
+    },
+    {
+     "asin": "B0BLRMCM9Y",
+     "slug": "fellow-ode-gen-2",
+     "price": 399.95,
+     "rating": 3.9,
+     "ratings": 712,
+     "bestseller": true
+    },
+    {
+     "asin": "B07XSK2PKN",
+     "slug": "eureka-mignon-specialita",
+     "price": 599.0,
+     "rating": 4.2,
+     "ratings": 201,
+     "bestseller": false
+    },
+    {
+     "asin": "B07CXYF5ZX",
+     "slug": "baratza-sette-270wi",
+     "price": 599.95,
+     "rating": 4.2,
+     "ratings": 433,
+     "bestseller": false
+    }
+   ],
+   "skipped_picks_reason": "1 Top 10 item(s) not priced before Amazon access was stopped; badges not shipped",
+   "draft_picks_incomplete_data": {
+    "premium": {
+     "asin": "B075G11F9N",
+     "slug": "baratza-sette-30",
+     "name": "Baratza Sette 30 Conical Burr Grinder",
+     "price": 299.95,
+     "line": "Among the highest-end picks in this Top 10 \u2014 entry level home grinder."
+    },
+    "bang": {
+     "asin": "B07JQ4P976",
+     "slug": "comandante-c40",
+     "name": "Comandante C40 MK4 Nitro Blade Hand Grinder",
+     "price": 267.79,
+     "line": "Mid-priced and an Amazon Best Seller."
+    },
+    "value": {
+     "asin": "B01MXJI90S",
+     "slug": "hario-skerton-pro",
+     "name": "Hario Skerton Pro Ceramic Hand Grinder",
+     "price": 54.5,
+     "line": "Lowest-priced pick in this Top 10."
+    }
+   }
+  },
+  "pour-over": {
+   "site": "brewworth",
+   "page": "pour-over",
+   "checked": "2026-10-04",
+   "dropped": [],
+   "notes": [],
+   "prices": [
+    {
+     "asin": "B07KQVW6RR",
+     "slug": "bodum-34oz-pour-over-coffee-maker",
+     "price": 19.99,
+     "rating": 4.5,
+     "ratings": 11837,
+     "bestseller": true
+    },
+    {
+     "asin": "B000P4D5HG",
+     "slug": "hario-v60-02",
+     "price": 25.54,
+     "rating": 4.7,
+     "ratings": 12088,
+     "bestseller": true
+    },
+    {
+     "asin": "B07NS2SV3W",
+     "slug": "hario-switch-02",
+     "price": 31.3,
+     "rating": 4.7,
+     "ratings": 2477,
+     "bestseller": true
+    },
+    {
+     "asin": "B00TY0UFAW",
+     "slug": "kalita-wave-155",
+     "price": 33.98,
+     "rating": 4.7,
+     "ratings": 3136,
+     "bestseller": false
+    },
+    {
+     "asin": "B07NRXYXTZ",
+     "slug": "hario-switch-02-set",
+     "price": 39.0,
+     "rating": 4.6,
+     "ratings": 973,
+     "bestseller": false
+    },
+    {
+     "asin": "B0047BIWSK",
+     "slug": "aeropress-original",
+     "price": 39.95,
+     "rating": 4.6,
+     "ratings": 26370,
+     "bestseller": false
+    },
+    {
+     "asin": "B086X11L47",
+     "slug": "clever-dripper",
+     "price": 41.96,
+     "rating": 4.7,
+     "ratings": 4378,
+     "bestseller": false
+    },
+    {
+     "asin": "B01LYUX6LK",
+     "slug": "chemex-classic-6-cup",
+     "price": 47.03,
+     "rating": 4.8,
+     "ratings": 6977,
+     "bestseller": false
+    },
+    {
+     "asin": "B07B3HMTPD",
+     "slug": "fellow-stagg-xf",
+     "price": 69.95,
+     "rating": 4.4,
+     "ratings": 47,
+     "bestseller": false
+    },
+    {
+     "asin": "B0C6NGDLLP",
+     "slug": "aeropress-xl",
+     "price": 79.95,
+     "rating": 4.6,
+     "ratings": 26370,
+     "bestseller": false
+    }
+   ],
+   "picks": {
+    "premium": {
+     "asin": "B0C6NGDLLP",
+     "slug": "aeropress-xl",
+     "name": "AeroPress XL Coffee Maker",
+     "price": 79.95,
+     "line": "Highest-end pick in this Top 10: the XL AeroPress for press, pour-over, and espresso-style brewing."
+    },
+    "bang": {
+     "asin": "B000P4D5HG",
+     "slug": "hario-v60-02",
+     "name": "Hario V60 Ceramic Dripper 02",
+     "price": 25.54,
+     "line": "Mid-priced Amazon Best Seller: the ceramic V60 dripper in size 02."
+    },
+    "value": {
+     "asin": "B07KQVW6RR",
+     "slug": "bodum-34oz-pour-over-coffee-maker",
+     "name": "Bodum 34oz Pour Over Coffee Maker",
+     "price": 19.99,
+     "line": "Lowest-priced pick in this Top 10, still well rated on Amazon: borosilicate glass with a reusable stainless steel filter."
+    }
+   }
+  },
+  "kettles-scales": {
+   "site": "brewworth",
+   "page": "kettles-scales",
+   "checked": "2026-10-04",
+   "dropped": [
+    {
+     "asin": "B0CQY78HV6",
+     "slug": "maestri-espresso-scale",
+     "why": "not fetched"
+    },
+    {
+     "asin": "B0CBK9QHLY",
+     "slug": "maestri-s1-mini-scale",
+     "why": "not fetched"
+    },
+    {
+     "asin": "B0CXM7CY6F",
+     "slug": "soyok-food-scale-11lb-kitchen-scale",
+     "why": "not fetched"
+    }
+   ],
+   "notes": [],
+   "prices": [
+    {
+     "asin": "B08CZDYNF7",
+     "slug": "ultrean-food-scale",
+     "price": 6.99,
+     "rating": 4.6,
+     "ratings": 22172,
+     "bestseller": true
+    },
+    {
+     "asin": "B0BN4H1X9L",
+     "slug": "mik-nana-food-scale",
+     "price": 8.06,
+     "rating": 4.5,
+     "ratings": 5661,
+     "bestseller": true
+    },
+    {
+     "asin": "B06X9NQ8GX",
+     "slug": "amazon-basics-digital-kitchen-scale-with",
+     "price": 9.89,
+     "rating": 4.7,
+     "ratings": 119237,
+     "bestseller": true
+    },
+    {
+     "asin": "B0113UZJE2",
+     "slug": "etekcity-food-kitchen-scale",
+     "price": 9.99,
+     "rating": 4.6,
+     "ratings": 177535,
+     "bestseller": true
+    },
+    {
+     "asin": "B0BYN6Q8L7",
+     "slug": "ggq-food-scale-33lb-digital-kitchen",
+     "price": 17.98,
+     "rating": 4.4,
+     "ratings": 8890,
+     "bestseller": true
+    },
+    {
+     "asin": "B0007GAWRS",
+     "slug": "escali-primo-digital-food-scale-multi",
+     "price": 25.0,
+     "rating": 4.6,
+     "ratings": 7376,
+     "bestseller": true
+    },
+    {
+     "asin": "B07T1CH2HH",
+     "slug": "cosori-gooseneck-electric-kettle-with-temperature",
+     "price": 69.99,
+     "rating": 4.6,
+     "ratings": 19583,
+     "bestseller": true
+    }
+   ],
+   "skipped_picks_reason": "3 Top 10 item(s) not priced before Amazon access was stopped; badges not shipped",
+   "draft_picks_incomplete_data": {
+    "premium": {
+     "asin": "B07T1CH2HH",
+     "slug": "cosori-gooseneck-electric-kettle-with-temperature",
+     "name": "Cosori Gooseneck Electric Kettle with Temperature Control",
+     "price": 69.99,
+     "line": "Highest-end pick in this Top 10."
+    },
+    "bang": {
+     "asin": "B06X9NQ8GX",
+     "slug": "amazon-basics-digital-kitchen-scale-with",
+     "name": "Amazon Basics Digital Kitchen Scale with LCD Display",
+     "price": 9.89,
+     "line": "Mid-priced and an Amazon Best Seller \u2014 tare function, multiple units."
+    },
+    "value": {
+     "asin": "B08CZDYNF7",
+     "slug": "ultrean-food-scale",
+     "name": "Ultrean Food Scale",
+     "price": 6.99,
+     "line": "Lowest-priced pick in this Top 10, still well rated on Amazon \u2014 digital kitchen scale, LCD display."
+    }
+   }
+  },
+  "travel-espresso": {
+   "site": "brewworth",
+   "page": "travel-espresso",
+   "checked": "2026-10-04",
+   "dropped": [
+    {
+     "asin": "B0F6LB2525",
+     "slug": "wacaco-pixapresso",
+     "why": "not fetched"
+    },
+    {
+     "asin": "B0F99K6MZH",
+     "slug": "bincoo-manual-espresso-maker-set-hand",
+     "why": "not fetched"
+    },
+    {
+     "asin": "B0FD63L3YY",
+     "slug": "flair-2go-portable",
+     "why": "not fetched"
+    }
+   ],
+   "notes": [],
+   "prices": [
+    {
+     "asin": "B00VTA9F6U",
+     "slug": "wacaco-minipresso-gr",
+     "price": 46.9,
+     "rating": 4.4,
+     "ratings": 6209,
+     "bestseller": true
+    },
+    {
+     "asin": "B07CQD6K8W",
+     "slug": "wacaco-nanopresso",
+     "price": 64.9,
+     "rating": 4.4,
+     "ratings": 4655,
+     "bestseller": false
+    },
+    {
+     "asin": "B09M9M1LFC",
+     "slug": "staresso-plus-sp300-manual-espresso-machine",
+     "price": 99.59,
+     "rating": 4.3,
+     "ratings": 245,
+     "bestseller": true
+    },
+    {
+     "asin": "B097DCNLL6",
+     "slug": "wacaco-picopresso",
+     "price": 129.9,
+     "rating": 4.4,
+     "ratings": 1425,
+     "bestseller": false
+    },
+    {
+     "asin": "B0BRKFWPF3",
+     "slug": "outin-nano",
+     "price": 149.99,
+     "rating": 4.2,
+     "ratings": 5765,
+     "bestseller": false
+    },
+    {
+     "asin": "B07VW5L3DL",
+     "slug": "flair-classic",
+     "price": 159.0,
+     "rating": 4.1,
+     "ratings": 524,
+     "bestseller": false
+    },
+    {
+     "asin": "B0842H62PV",
+     "slug": "flair-updated-49-pro-black-all",
+     "price": 359.0,
+     "rating": 4.2,
+     "ratings": 426,
+     "bestseller": true
+    }
+   ],
+   "skipped_picks_reason": "3 Top 10 item(s) not priced before Amazon access was stopped; badges not shipped",
+   "draft_picks_incomplete_data": {
+    "premium": {
+     "asin": "B097DCNLL6",
+     "slug": "wacaco-picopresso",
+     "name": "Wacaco Picopresso Portable Espresso Maker",
+     "price": 129.9,
+     "line": "Among the highest-end picks in this Top 10 \u2014 naked portafilter."
+    },
+    "bang": {
+     "asin": "B09M9M1LFC",
+     "slug": "staresso-plus-sp300-manual-espresso-machine",
+     "name": "STARESSO PLUS SP300 Manual Espresso Machine",
+     "price": 99.59,
+     "line": "Mid-priced and an Amazon Best Seller \u2014 portable coffee maker."
+    },
+    "value": {
+     "asin": "B00VTA9F6U",
+     "slug": "wacaco-minipresso-gr",
+     "name": "Wacaco Minipresso GR",
+     "price": 46.9,
+     "line": "Lowest-priced pick in this Top 10, still well rated on Amazon \u2014 compatible ground coffee, hand coffee maker."
+    }
+   }
+  },
+  "frothers-accessories": {
+   "site": "brewworth",
+   "page": "frothers-accessories",
+   "checked": "2026-10-04",
+   "dropped": [
+    {
+     "asin": "B0DSV2CQZL",
+     "slug": "normcore-wdt-tool",
+     "why": "not fetched"
+    }
+   ],
+   "notes": [],
+   "prices": [
+    {
+     "asin": "B087TL2BR9",
+     "slug": "hoomil-12oz-pitcher",
+     "price": 7.97,
+     "rating": 4.7,
+     "ratings": 1206,
+     "bestseller": true
+    },
+    {
+     "asin": "B07KFYXTRR",
+     "slug": "adorever-milk-frothing-pitcher",
+     "price": 8.49,
+     "rating": 4.7,
+     "ratings": 12533,
+     "bestseller": true
+    },
+    {
+     "asin": "B082314NFL",
+     "slug": "zulay-kitchen-milk-frother-handheld-electric",
+     "price": 9.99,
+     "rating": 4.4,
+     "ratings": 239674,
+     "bestseller": true
+    },
+    {
+     "asin": "B07FTMLHLS",
+     "slug": "milk-pitcher-20oz",
+     "price": 12.97,
+     "rating": 4.7,
+     "ratings": 1206,
+     "bestseller": false
+    },
+    {
+     "asin": "B0016CBMYY",
+     "slug": "milk-frothing-pitcher",
+     "price": 16.95,
+     "rating": 4.3,
+     "ratings": 241,
+     "bestseller": false
+    },
+    {
+     "asin": "B0C6RGQHLS",
+     "slug": "bodum-barista-frother",
+     "price": 39.99,
+     "rating": 3.8,
+     "ratings": 157,
+     "bestseller": false
+    },
+    {
+     "asin": "B09BTLP4P1",
+     "slug": "normcore-v4-tamper",
+     "price": 43.99,
+     "rating": 4.6,
+     "ratings": 3358,
+     "bestseller": false
+    },
+    {
+     "asin": "B0B5LMQXXH",
+     "slug": "subminimal-nanofoamer",
+     "price": 49.95,
+     "rating": 3.9,
+     "ratings": 1394,
+     "bestseller": false
+    },
+    {
+     "asin": "B00ISQ6ZKC",
+     "slug": "breville-knock-box-mini",
+     "price": 77.0,
+     "rating": 4.8,
+     "ratings": 8264,
+     "bestseller": false
+    }
+   ],
+   "skipped_picks_reason": "1 Top 10 item(s) not priced before Amazon access was stopped; badges not shipped",
+   "draft_picks_incomplete_data": {
+    "premium": {
+     "asin": "B00ISQ6ZKC",
+     "slug": "breville-knock-box-mini",
+     "name": "Breville Knock Box Mini",
+     "price": 77.0,
+     "line": "Highest-end pick in this Top 10."
+    },
+    "bang": {
+     "asin": "B07KFYXTRR",
+     "slug": "adorever-milk-frothing-pitcher",
+     "name": "Adorever Milk Frothing Pitcher",
+     "price": 8.49,
+     "line": "Mid-priced and an Amazon Best Seller \u2014 art pen."
+    },
+    "value": {
+     "asin": "B087TL2BR9",
+     "slug": "hoomil-12oz-pitcher",
+     "name": "HOOMIL 12oz Stainless Milk Frothing Pitcher",
+     "price": 7.97,
+     "line": "Lowest-priced pick in this Top 10, still well rated on Amazon \u2014 304 stainless steel."
+    }
+   }
+  },
+  "cleaning-maintenance": {
+   "site": "brewworth",
+   "page": "cleaning-maintenance",
+   "checked": "2026-10-04",
+   "dropped": [
+    {
+     "asin": "B0C913XXP1",
+     "slug": "espresso-cleaning-tablets",
+     "why": "not fetched"
+    },
+    {
+     "asin": "B0C91BZ7TZ",
+     "slug": "espresso-descaler",
+     "why": "not fetched"
+    },
+    {
+     "asin": "B0DP5GMT1R",
+     "slug": "tillbrook-breville-espresso-machine-compatible-descaler",
+     "why": "not fetched"
+    }
+   ],
+   "notes": [],
+   "prices": [
+    {
+     "asin": "B0016C8ZO4",
+     "slug": "blind-basket-58mm",
+     "price": 4.0,
+     "rating": 4.7,
+     "ratings": 1204,
+     "bestseller": false
+    },
+    {
+     "asin": "B06X16S1HZ",
+     "slug": "affresh-coffee-maker-cleaner",
+     "price": 5.98,
+     "rating": 4.6,
+     "ratings": 16943,
+     "bestseller": true
+    },
+    {
+     "asin": "B00494MU9M",
+     "slug": "breville-bec250-espresso-machine-cleaning-tablets",
+     "price": 11.98,
+     "rating": 4.8,
+     "ratings": 5795,
+     "bestseller": true
+    },
+    {
+     "asin": "B000BJSF6Q",
+     "slug": "jura-64308-cleaning-tablets-for-all",
+     "price": 14.75,
+     "rating": 4.8,
+     "ratings": 4349,
+     "bestseller": true
+    },
+    {
+     "asin": "B008YETL18",
+     "slug": "de-longhi-ecodecalk-universal-descaler",
+     "price": 16.95,
+     "rating": 4.7,
+     "ratings": 166234,
+     "bestseller": true
+    },
+    {
+     "asin": "B001418KNS",
+     "slug": "urnex-cafiza",
+     "price": 19.99,
+     "rating": 4.8,
+     "ratings": 8391,
+     "bestseller": true
+    },
+    {
+     "asin": "B0033FYR0I",
+     "slug": "puly-caff-plus",
+     "price": 22.64,
+     "rating": 4.8,
+     "ratings": 180,
+     "bestseller": false
+    }
+   ],
+   "skipped_picks_reason": "3 Top 10 item(s) not priced before Amazon access was stopped; badges not shipped",
+   "draft_picks_incomplete_data": {
+    "premium": {
+     "asin": "B0033FYR0I",
+     "slug": "puly-caff-plus",
+     "name": "Puly Caff Plus Espresso Machine Cleaner",
+     "price": 22.64,
+     "line": "Highest-end pick in this Top 10 \u2014 32 oz."
+    },
+    "bang": {
+     "asin": "B008YETL18",
+     "slug": "de-longhi-ecodecalk-universal-descaler",
+     "name": "De'Longhi EcoDecalk Universal Descaler",
+     "price": 16.95,
+     "line": "Mid-priced and an Amazon Best Seller \u2014 for coffee machines 16.90 oz."
+    },
+    "value": {
+     "asin": "B0016C8ZO4",
+     "slug": "blind-basket-58mm",
+     "name": "58mm Blind Basket Backflush Insert",
+     "price": 4.0,
+     "line": "Lowest-priced pick in this Top 10, still well rated on Amazon."
+    }
+   }
+  },
+  "coffee-canisters": {
+   "site": "brewworth",
+   "page": "coffee-canisters",
+   "checked": "2026-10-04",
+   "dropped": [
+    {
+     "asin": "B0CWH57Q9F",
+     "slug": "veken-coffee-canister-with-window",
+     "why": "not fetched"
+    },
+    {
+     "asin": "B0CTYLS1X3",
+     "slug": "kivy-vacuum-coffee-canister",
+     "why": "not fetched"
+    },
+    {
+     "asin": "B0D9M3DGLR",
+     "slug": "tourdeus-glass-coffee-bean-canister",
+     "why": "not fetched"
+    },
+    {
+     "asin": "B0FB1JJ9K4",
+     "slug": "yszaxnsr-15oz-coffee-canister",
+     "why": "not fetched"
+    },
+    {
+     "asin": "B0D5Y6Y3HV",
+     "slug": "hb-design-co-airtight-coffee-canister",
+     "why": "not fetched"
+    },
+    {
+     "asin": "B0DSBRZ6FQ",
+     "slug": "lryybti-coffee-canisters-with-window-airtight",
+     "why": "not fetched"
+    }
+   ],
+   "notes": [
+    "well-regarded threshold relaxed to rating>=0",
+    "no Best Seller in mid band"
+   ],
+   "prices": [
+    {
+     "asin": "B06W9M3BSP",
+     "slug": "coffee-gator-coffee-canister",
+     "price": 16.99,
+     "rating": 4.7,
+     "ratings": 10191,
+     "bestseller": true
+    },
+    {
+     "asin": "B07PWY7R6S",
+     "slug": "fellow-atmos",
+     "price": 29.95,
+     "rating": 3.9,
+     "ratings": 6878,
+     "bestseller": false
+    },
+    {
+     "asin": "B07NPMNW84",
+     "slug": "atmos-12",
+     "price": 29.95,
+     "rating": 3.9,
+     "ratings": 6878,
+     "bestseller": false
+    },
+    {
+     "asin": "B09NP55LSG",
+     "slug": "planetary-design-airscape-stainless-steel-coffee",
+     "price": 43.23,
+     "rating": 4.8,
+     "ratings": 6293,
+     "bestseller": true
+    }
+   ],
+   "skipped_picks_reason": "6 Top 10 item(s) not priced before Amazon access was stopped; badges not shipped",
+   "draft_picks_incomplete_data": {
+    "premium": {
+     "asin": "B09NP55LSG",
+     "slug": "planetary-design-airscape-stainless-steel-coffee",
+     "name": "Planetary Design Airscape Stainless Steel Coffee Canister",
+     "price": 43.23,
+     "line": "Highest-end pick in this Top 10 \u2014 food storage."
+    },
+    "bang": {
+     "asin": "B07PWY7R6S",
+     "slug": "fellow-atmos",
+     "name": "Fellow Atmos canister",
+     "price": 29.95,
+     "line": "Mid-priced pick in this Top 10 \u2014 holds 6 oz beans."
+    },
+    "value": {
+     "asin": "B06W9M3BSP",
+     "slug": "coffee-gator-coffee-canister",
+     "name": "Coffee Gator Coffee Canister",
+     "price": 16.99,
+     "line": "Lowest-priced pick in this Top 10, still well rated on Amazon \u2014 11oz airtight stainless steel container."
+    }
+   }
+  },
+  "coffee-storage": {
+   "site": "brewworth",
+   "page": "coffee-storage",
+   "checked": "2026-10-04",
+   "dropped": [
+    {
+     "asin": "B0D4PN6XN9",
+     "slug": "ohtomber-22oz-stainless-steel-airtight-coffee",
+     "why": "not fetched"
+    }
+   ],
+   "notes": [],
+   "prices": [
+    {
+     "asin": "B0H6WX53QM",
+     "slug": "voonsctm-glass-jars-with-lids",
+     "price": 8.99,
+     "rating": 4.5,
+     "ratings": 29,
+     "bestseller": true
+    },
+    {
+     "asin": "B0H3TF8VDD",
+     "slug": "comsaf-glass-coffee-canister-jar-with",
+     "price": 9.98,
+     "rating": 4.6,
+     "ratings": 52,
+     "bestseller": true
+    },
+    {
+     "asin": "B00VSCDX8U",
+     "slug": "oggi-stainless-steel-coffee-canister-62",
+     "price": 14.99,
+     "rating": 4.5,
+     "ratings": 8501,
+     "bestseller": true
+    },
+    {
+     "asin": "B08K1TQM6H",
+     "slug": "coffee-gator-coffee-canister-2",
+     "price": 27.99,
+     "rating": 4.7,
+     "ratings": 10927,
+     "bestseller": true
+    },
+    {
+     "asin": "B07PWY7R6S",
+     "slug": "atmos-storage",
+     "price": 29.95,
+     "rating": 3.9,
+     "ratings": 6878,
+     "bestseller": false
+    },
+    {
+     "asin": "B0FPFCXMST",
+     "slug": "gaiakallon-vacuum-coffee-canister",
+     "price": 29.99,
+     "rating": 4.5,
+     "ratings": 225,
+     "bestseller": true
+    },
+    {
+     "asin": "B0FSFLXSXQ",
+     "slug": "styled-settings-coffee-storage-container",
+     "price": 29.99,
+     "rating": 4.8,
+     "ratings": 150,
+     "bestseller": true
+    },
+    {
+     "asin": "B0FWFZXHF7",
+     "slug": "simple-modern-delta-coffee-canister-airtight",
+     "price": 39.99,
+     "rating": 4.3,
+     "ratings": 110,
+     "bestseller": true
+    },
+    {
+     "asin": "B07W6RKJVF",
+     "slug": "airscape-by-planetary-design",
+     "price": 47.49,
+     "rating": 4.8,
+     "ratings": 6193,
+     "bestseller": true
+    }
+   ],
+   "skipped_picks_reason": "1 Top 10 item(s) not priced before Amazon access was stopped; badges not shipped",
+   "draft_picks_incomplete_data": {
+    "premium": {
+     "asin": "B07W6RKJVF",
+     "slug": "airscape-by-planetary-design",
+     "name": "Airscape by Planetary Design",
+     "price": 47.49,
+     "line": "Highest-end pick in this Top 10 \u2014 2.2 lbs coffee storage."
+    },
+    "bang": {
+     "asin": "B08K1TQM6H",
+     "slug": "coffee-gator-coffee-canister-2",
+     "name": "Coffee Gator Coffee Canister",
+     "price": 27.99,
+     "line": "Mid-priced and an Amazon Best Seller \u2014 22oz airtight stainless steel container."
+    },
+    "value": {
+     "asin": "B0H3TF8VDD",
+     "slug": "comsaf-glass-coffee-canister-jar-with",
+     "name": "ComSaf Glass Coffee Canister Jar with Acacia Wood Lid 34 oz",
+     "price": 9.98,
+     "line": "Among the lowest-priced picks in this Top 10."
+    }
+   }
+  }
+ }
+}

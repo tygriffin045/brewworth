@@ -7,7 +7,7 @@ import { AffiliateButton } from "@/components/AffiliateButton";
 export function ProductCard({
   product,
   priority = false,
-  showAffiliateCta = false,
+  showAffiliateCta = true,
   verdict,
 }: {
   product: Product;
@@ -57,9 +57,6 @@ export function ProductCard({
               Verdict ·{" "}
             </span>
             {verdictText}
-          </p>
-          <p className="mt-auto pt-3 text-sm font-medium text-[#3d2314]">
-            {product.priceBand}
           </p>
         </div>
       </Link>

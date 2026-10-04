@@ -7,7 +7,7 @@ export const products: Product[] = [
     brand: "Breville",
     category: "espresso-machines",
     tagline: "Fast heat-up beginner espresso without a huge footprint",
-    summary: "The Bambino is Breville’s compact entry machine: ThermoJet heat-up in seconds, a 54mm portafilter, and enough steam for everyday milk drinks. A strong starter when you want café-style espresso at home without a steep learning curve or a $1,000+ prosumer setup.",
+    summary: "The Bambino is Breville’s compact entry machine: ThermoJet heat-up in seconds, a 54mm portafilter, and enough steam for everyday milk drinks. A strong starter when you want café-style espresso at home without a steep learning curve or a prosumer setup.",
     priceBand: "About $300",
     budget: "budget",
     priceMin: 270,
@@ -463,7 +463,7 @@ export const products: Product[] = [
     brand: "Baratza",
     category: "grinders",
     tagline: "The go-to entry grinder that can actually do espresso",
-    summary: "The Encore ESP adds finer grind steps for espresso on Baratza’s legendary Encore platform. It’s the upgrade that most beginner machines need: consistent burrs, repairable design, and a clear path from drip to espresso without jumping straight to a $700+ grinder.",
+    summary: "The Encore ESP adds finer grind steps for espresso on Baratza’s legendary Encore platform. It’s the upgrade that most beginner machines need: consistent burrs, repairable design, and a clear path from drip to espresso without jumping straight to a high-end grinder.",
     priceBand: "About $200",
     budget: "mid",
     priceMin: 180,
@@ -483,7 +483,7 @@ export const products: Product[] = [
       "Single-dosing workflow needs a few habits",
       "Stepped adjustments — less micro-fine than stepless"
     ],
-    whoItsFor: "Anyone buying a Bambino/Gaggia/Dedica who wants the single biggest shot-quality upgrade under ~$250.",
+    whoItsFor: "Anyone buying a Bambino/Gaggia/Dedica who wants the single biggest shot-quality upgrade for the money.",
     specs: [
       {
         label: "Burrs",
@@ -1489,7 +1489,7 @@ export const products: Product[] = [
     brand: "Gaggia",
     category: "espresso-machines",
     tagline: "Updated Classic with 9-bar brew, 58mm group, commercial steam wand",
-    summary: "The Classic Evo Pro is the modern Gaggia Classic: commercial-style 58mm portafilter, ~9-bar brew path, and a commercial steam wand — with boiler updates aimed at scale resistance. It replaces older Classic Pro listings as the default “learn real espresso” machine under $600 when you bring a proper grinder.",
+    summary: "The Classic Evo Pro is the modern Gaggia Classic: commercial-style 58mm portafilter, ~9-bar brew path, and a commercial steam wand — with boiler updates aimed at scale resistance. It replaces older Classic Pro listings as the default “learn real espresso” machine when you bring a proper grinder.",
     priceBand: "About $530",
     budget: "mid",
     priceMin: 450,
@@ -3107,7 +3107,7 @@ export const products: Product[] = [
       "Auto-off quirks on some units",
       "Not flow-rate graphing"
     ],
-    whoItsFor: "Home baristas dialing dose and yield who want a compact scale under $30.",
+    whoItsFor: "Home baristas dialing dose and yield who want a compact, inexpensive scale.",
     specs: [
       {
         label: "Resolution",

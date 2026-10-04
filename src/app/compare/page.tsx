@@ -4,6 +4,8 @@ import Link from "next/link";
 import { getProduct } from "@/data/products";
 import { AffiliateButton } from "@/components/AffiliateButton";
 import { DisclosureLine } from "@/components/DisclosureLine";
+import type { ReactNode } from "react";
+import { getAffiliateUrl } from "@/lib/affiliate";
 
 export const metadata: Metadata = {
   title: "Espresso machine comparison",
@@ -32,8 +34,20 @@ const slugs = [
   "delonghi-dedica",
 ] as const;
 
-const rows: { label: string; key: (slug: string) => string }[] = [
-  { label: "Price band", key: (s) => getProduct(s)!.priceBand },
+const rows: { label: string; key: (slug: string) => ReactNode }[] = [
+  {
+    label: "Price",
+    key: (s) => (
+      <a
+        href={getAffiliateUrl({ slug: s, amazonAsin: getProduct(s)!.amazonAsin })}
+        target="_blank"
+        rel="nofollow sponsored noopener noreferrer"
+        className="font-semibold text-[#c45c26] underline underline-offset-2"
+      >
+        Check price on Amazon
+      </a>
+    ),
+  },
   { label: "Budget tier", key: (s) => getProduct(s)!.budget },
   {
     label: "Boiler",

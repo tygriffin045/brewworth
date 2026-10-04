@@ -37,7 +37,7 @@ export const buyerIntentGuides: Guide[] = [
           "Grows with you if you add an espresso machine later",
         ],
         cons: [
-          "Usually sits right around the $200 line — watch for sales",
+          "Price moves around — watch for sales",
           "Louder and plainer than the Fellow Opus",
           "Filter steps are wider than on a filter-only flat burr grinder",
         ],
@@ -65,7 +65,7 @@ export const buyerIntentGuides: Guide[] = [
       },
       {
         productSlug: "timemore-chestnut-c3",
-        label: "Best under $100 (manual)",
+        label: "Best budget pick (manual)",
         verdict:
           "A metal-body hand grinder with CNC-machined stainless conical burrs — better grind quality per dollar than any electric at this price.",
         pros: [
@@ -84,7 +84,7 @@ export const buyerIntentGuides: Guide[] = [
       },
       {
         productSlug: "fellow-ode-gen-2",
-        label: "Worth stretching for (usually over $200)",
+        label: "Worth stretching for",
         verdict:
           "If filter is all you brew and you can stretch the budget, the Ode Gen 2’s 64mm flat burrs are the clarity upgrade.",
         pros: [
@@ -94,7 +94,7 @@ export const buyerIntentGuides: Guide[] = [
           "Quieter grinding and a compact footprint",
         ],
         cons: [
-          "Typically priced above $200 — only a sale or open-box gets it under",
+          "Priced above the others — a sale or open-box can close the gap",
           "Not for espresso (Fellow says so on the listing)",
           "Single-dose workflow means weighing beans every brew",
         ],
@@ -130,7 +130,7 @@ export const buyerIntentGuides: Guide[] = [
     sections: [
       {
         heading: "The short version",
-        body: "Buy the Baratza Encore ESP if you want the dependable default that can be repaired and can also handle espresso. Buy the Fellow Opus if you want a better-looking, tidier all-rounder and you can catch it on sale. Buy the Capresso Infinity Plus if every dollar counts and you mostly brew Chemex or drip. Buy the TIMEMORE C2S if you brew one or two cups at a time and want the best grind quality per dollar. If filter coffee is your whole world and you can stretch past $200, the Fellow Ode Gen 2 is the upgrade.",
+        body: "Buy the Baratza Encore ESP if you want the dependable default that can be repaired and can also handle espresso. Buy the Fellow Opus if you want a better-looking, tidier all-rounder and you can catch it on sale. Buy the Capresso Infinity Plus if every dollar counts and you mostly brew Chemex or drip. Buy the TIMEMORE C2S if you brew one or two cups at a time and want the best grind quality per dollar. If filter coffee is your whole world and you can stretch your budget, the Fellow Ode Gen 2 is the upgrade.",
       },
       {
         heading: "Pair it with the rest of your pour-over kit",

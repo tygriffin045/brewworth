@@ -181,9 +181,6 @@ export default async function GuidePage({ params }: Props) {
                 <p className="mt-1 line-clamp-2 text-xs text-[#5c4a3a]">
                   {p.tagline}
                 </p>
-                <p className="mt-2 text-sm font-medium text-[#3d2314]">
-                  {p.priceBand}
-                </p>
                 <AffiliateButton
                   productSlug={p.slug}
                   productName={p.name}
