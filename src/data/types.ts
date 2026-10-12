@@ -6,8 +6,7 @@ export type CategorySlug =
   | "frothers-accessories"
   | "pour-over"
   | "travel-espresso"
-  | "cleaning-maintenance"
-  | "coffee-storage";
+  | "cleaning-maintenance";
 
 export type BudgetTier = "$" | "$$" | "$$$";
 

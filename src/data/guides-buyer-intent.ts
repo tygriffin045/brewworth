@@ -21,7 +21,7 @@ export const buyerIntentGuides: Guide[] = [
     productSlugs: [
       "baratza-encore-esp",
       "capresso-infinity",
-      "timemore-chestnut-c3",
+      "timemore-chestnut-c2s",
       "fellow-ode-gen-2",
     ],
     picks: [
@@ -64,12 +64,12 @@ export const buyerIntentGuides: Guide[] = [
           "Tight budgets, drip-machine households, and anyone who mostly brews Chemex, batch drip, or French press.",
       },
       {
-        productSlug: "timemore-chestnut-c3",
+        productSlug: "timemore-chestnut-c2s",
         label: "Best budget pick (manual)",
         verdict:
           "A metal-body hand grinder with CNC-machined stainless conical burrs — better grind quality per dollar than any electric at this price.",
         pros: [
-          "Stainless steel S2C conical burrs with double-bearing alignment",
+          "Stainless steel conical burrs with double-bearing alignment",
           "Roughly 36 adjustment levels — easy to walk a pour-over finer or coarser",
           "Full metal unibody, about 700g; travels well",
           "No motor, no noise, nothing to break",

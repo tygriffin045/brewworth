@@ -20,7 +20,7 @@ const CATEGORY_INTRO: Record<string, string> = {
   "pour-over":
     "Clean filter cups that pair with any espresso bar — V60, Switch, Chemex, AeroPress, Kalita, and SCA-minded drip. Pick a ritual you’ll keep on weekdays.",
   "kettles-scales":
-    "Temperature control and 0.1g resolution remove guesswork from bloom, ratio, and dialing. Start affordable; upgrade when you’re logging shots daily.",
+    "A 0.1g scale removes guesswork from bloom, ratio, and dialing. Start affordable; upgrade when you’re logging shots daily.",
   "travel-espresso":
     "Manual levers and portable electrics for hotels, camping, and offices — real pressure without a full countertop setup. Pack light, brew intentionally.",
   "frothers-accessories":

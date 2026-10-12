@@ -116,7 +116,7 @@ export const products: Product[] = [
     category: "espresso-machines",
     tagline: "Prosumer classic with a commercial-style 58mm portafilter",
     summary: "The Gaggia Classic Pro is a long-running home classic: brass boiler, commercial-style 58mm portafilter, and a huge modding community. It rewards technique and pairs beautifully with a capable grinder — more “learn espresso” than “push button latte.”",
-    tier: "$",
+    tier: "$$",
     imageGradient: "from-zinc-800 via-stone-700 to-amber-950",
     imageAlt: "Gaggia Classic Pro espresso machine product photo",
     featured: true,
@@ -940,7 +940,7 @@ export const products: Product[] = [
     cons: [
       "Wrong diameter = wasted purchase — measure first",
       "Not needed day-one for pressurized-basket beginners",
-      "Spring-loaded tamp takes away some manual feel"
+      "Spring-loaded design sets tamp pressure for you, if you prefer to control it yourself"
     ],
     whoItsFor: "Gaggia Classic Pro, Silvia, and other 58mm owners ready to dial espresso with consistent tamps.",
     specs: [
@@ -1083,28 +1083,28 @@ export const products: Product[] = [
   },
   {
     slug: "blind-basket-58mm",
-    name: "58mm Blind Basket Backflush Insert",
+    name: "58mm Blind Basket Backflush Insert (3-way solenoid machines only)",
     brand: "Espresso Supply",
     category: "cleaning-maintenance",
-    tagline: "Backflush disc for cleaning 58mm group heads",
-    summary: "A blind (backflush) basket lets you run detergent cycles through machines with a 3-way solenoid — essential maintenance for Gaggia Classic Pro, Silvia, and similar 58mm groups. Pair with Puly Caff cleaner for a healthy group head.",
+    tagline: "Niche tool: backflush insert for 58mm machines with a 3-way solenoid valve",
+    summary: "A niche pick: a blind (backflush) basket only works on machines with a 3-way solenoid valve and a 58mm portafilter, such as the Gaggia Classic Pro and Rancilio Silvia. It does not suit the Bambino, Dedica or most Breville machines. If your machine qualifies, pair it with a backflush detergent like Cafiza.",
     tier: "$$",
     imageGradient: "from-zinc-800 via-stone-700 to-neutral-950",
     imageAlt: "58mm stainless blind basket backflush insert product photo",
     featured: false,
     amazonQuery: "58mm blind basket backflush insert",
     pros: [
-      "Required for proper backflush cleaning",
+      "Lets 3-way solenoid machines backflush with detergent",
       "Cheap insurance for group head longevity",
       "Fits standard 58mm portafilters",
       "Pairs with espresso machine detergent"
     ],
     cons: [
       "Wrong size won’t seal — measure your portafilter",
-      "Not for machines without a 3-way valve workflow",
+      "Useless on machines without a 3-way solenoid (Bambino, Dedica, most Breville)",
       "Easy to misplace — store with cleaning kit"
     ],
-    whoItsFor: "58mm machine owners ready to clean with detergent backflush cycles.",
+    whoItsFor: "Owners of 58mm machines with a 3-way solenoid valve, such as the Gaggia Classic Pro or Rancilio Silvia.",
     specs: [
       {
         label: "Diameter",
@@ -1124,7 +1124,7 @@ export const products: Product[] = [
       },
       {
         label: "Pair with",
-        value: "Puly Caff detergent"
+        value: "Backflush detergent"
       }
     ],
     relatedSlugs: [
@@ -1478,7 +1478,7 @@ export const products: Product[] = [
       "Baratza parts and repair support"
     ],
     cons: [
-      "Noticeably loud vs Eureka Mignon class",
+      "Not designed as a low-noise grinder",
       "Premium vs Encore ESP / Opus",
       "Plastic body, unlike the metal Eureka"
     ],
@@ -1562,18 +1562,18 @@ export const products: Product[] = [
     relatedSlugs: [
       "fellow-ode-gen-2",
       "hario-v60-02",
-      "timemore-chestnut-c3"
+      "timemore-chestnut-c2s"
     ],
     imageUrl: "/products/B07JQ4P976.jpg",
     amazonAsin: "B07JQ4P976"
   },
   {
-    slug: "timemore-chestnut-c3",
+    slug: "timemore-chestnut-c2s",
     name: "TIMEMORE Chestnut C2S Hand Grinder",
     brand: "TIMEMORE",
     category: "grinders",
-    tagline: "All-metal S2C hand grinder for pour-over and travel",
-    summary: "The Chestnut C2S is TIMEMORE’s widely available metal-body hand grinder with stainless conical burrs and dual-bearing alignment. It’s a strong budget pick for pour-over, AeroPress, and French press. Espresso-fine adjustment is limited versus ESP-oriented mills. We keep the verified C2S ASIN so the Amazon link matches the product photo.",
+    tagline: "All-metal hand grinder for pour-over, AeroPress and travel",
+    summary: "The Chestnut C2S is TIMEMORE’s metal-body hand grinder with stainless steel conical burrs, a double-bearing shaft and about 36 adjustment steps. It holds about 25 g of beans, which suits one or two cups of pour-over, AeroPress or French press. Espresso-fine adjustment is limited compared with grinders built for espresso.",
     tier: "$",
     imageGradient: "from-neutral-800 via-zinc-700 to-stone-950",
     imageAlt: "TIMEMORE Chestnut C2S hand grinder product photo",
@@ -1581,28 +1581,28 @@ export const products: Product[] = [
     amazonQuery: "TIMEMORE Chestnut C2S hand grinder",
     pros: [
       "Strong value vs premium hand grinders",
-      "S2C burrs improve on older C2 cutting",
+      "Full-metal body with a double-bearing shaft",
       "Light enough for travel and camping kits",
-      "Espresso-capable with patience"
+      "About 36 steps from fine to coarse"
     ],
     cons: [
       "Not Comandante-level refinement",
       "Capacity is single-cup oriented",
-      "Several C2/C3 variants are sold, so check which one you're buying"
+      "Step size is coarse for dialing espresso"
     ],
     whoItsFor: "Travelers and budget-minded brewers who want a real burr hand grinder without Comandante pricing.",
     specs: [
       {
         label: "Burrs",
-        value: "S2C stainless conical ~38 mm"
+        value: "Stainless steel conical"
       },
       {
         label: "Adjustment",
-        value: "Stepless-style dial"
+        value: "About 36 steps"
       },
       {
         label: "Capacity",
-        value: "~20 g class"
+        value: "About 25 g"
       },
       {
         label: "Body",
@@ -1610,7 +1610,7 @@ export const products: Product[] = [
       },
       {
         label: "Best for",
-        value: "Travel / AeroPress / light espresso"
+        value: "Travel / AeroPress / pour-over"
       }
     ],
     relatedSlugs: [
@@ -1669,7 +1669,7 @@ export const products: Product[] = [
     ],
     relatedSlugs: [
       "hario-v60-02",
-      "timemore-chestnut-c3",
+      "timemore-chestnut-c2s",
       "chemex-classic-6-cup"
     ],
     imageUrl: "/products/B01MXJI90S.jpg",
@@ -1886,7 +1886,7 @@ export const products: Product[] = [
     relatedSlugs: [
       "wacaco-nanopresso",
       "outin-nano",
-      "timemore-chestnut-c3"
+      "timemore-chestnut-c2s"
     ],
     imageUrl: "/products/B097DCNLL6.jpg",
     amazonAsin: "B097DCNLL6"
@@ -2006,7 +2006,7 @@ export const products: Product[] = [
     category: "frothers-accessories",
     tagline: "Larger pitcher for two drinks or bigger latte art practice",
     summary: "A 20oz pitcher gives you room for two cappuccinos or more forgiving latte art practice than a tight 12oz. Sharp spout, durable stainless — size up when the 12oz Rattleware feels cramped.",
-    tier: "$",
+    tier: "$$",
     imageGradient: "from-zinc-700 via-stone-600 to-neutral-900",
     imageAlt: "20oz stainless milk frothing pitcher product photo",
     featured: false,
@@ -2059,7 +2059,7 @@ export const products: Product[] = [
     brand: "Bodum",
     category: "frothers-accessories",
     tagline: "Push-button hot froth when your steam wand isn’t enough",
-    summary: "Bodum’s Barista electric frother heats and textures milk with a handle-friendly pitcher — handy for Dedica owners, Flair setups, or offices without a steam wand. Not a replacement for a strong commercial wand, but a reliable weekday milk path.",
+    summary: "Bodum’s Barista electric frother is our Premium frother pick: unlike the NanoFoamer, it heats and textures milk in one step with a handle-friendly pitcher — handy for Dedica owners, Flair setups, or offices without a steam wand. Not a replacement for a strong commercial wand, but a reliable weekday milk path.",
     tier: "$$",
     imageGradient: "from-sky-950 via-cyan-900 to-stone-950",
     imageAlt: "Bodum Barista electric milk frother product photo",
@@ -2182,7 +2182,7 @@ export const products: Product[] = [
     cons: [
       "Not required on day one",
       "Check the mat size against your counter space",
-      "Silicone can stain with coffee oils over time"
+      "Silicone surface needs regular wiping to keep coffee oils off"
     ],
     whoItsFor: "Anyone tamping daily who is tired of protecting the counter with a towel.",
     specs: [
@@ -2534,7 +2534,7 @@ export const products: Product[] = [
     relatedSlugs: [
       "aeropress-original",
       "fellow-stagg-ekg",
-      "timemore-chestnut-c3"
+      "timemore-chestnut-c2s"
     ],
     imageUrl: "/products/B0C6NGDLLP.jpg",
     amazonAsin: "B0C6NGDLLP"
@@ -2707,7 +2707,7 @@ export const products: Product[] = [
     brand: "Urnex",
     category: "cleaning-maintenance",
     tagline: "Café-standard backflush detergent for portafilter machines",
-    summary: "Cafiza is the industry-standard espresso cleaner for backflushing and soaking portafilters — better matched to real espresso maintenance than multipurpose kitchen tablets. Use with a blind basket on machines that support backflush; rinse thoroughly. Keep descaler as a separate mineral-removal step.",
+    summary: "Cafiza is our Best Overall pick for cleaning: the café-standard espresso detergent that works across machine types. Use it to soak portafilters, baskets and steam parts on any machine, or to backflush with a blind basket if your machine has a 3-way solenoid. The 566 g tub covers months of home cleaning. It is not a descaler, so keep a separate product for mineral scale.",
     tier: "$$",
     imageGradient: "from-red-900 via-stone-800 to-zinc-950",
     imageAlt: "Urnex Cafiza espresso machine cleaning powder product photo",
@@ -2716,7 +2716,7 @@ export const products: Product[] = [
     pros: [
       "Café-standard backflush chemistry",
       "Large 566g tub lasts months",
-      "Works with blind-basket routines",
+      "Soaks baskets and parts on any espresso machine",
       "Trusted across prosumer machines"
     ],
     cons: [
@@ -2724,7 +2724,7 @@ export const products: Product[] = [
       "Powder handling requires care",
       "Overuse without rinsing tastes harsh"
     ],
-    whoItsFor: "Anyone with a backflushable espresso machine who wants proper group-head hygiene.",
+    whoItsFor: "Any espresso machine owner who wants one detergent for soaking parts, plus backflushing where the machine supports it.",
     specs: [
       {
         label: "Type",
@@ -2885,7 +2885,7 @@ export const products: Product[] = [
     ],
     cons: [
       "No accessory “corner” like wood mats",
-      "Can stain from coffee oils",
+      "Needs regular wiping to keep coffee oils off",
       "Generic branding"
     ],
     whoItsFor: "Anyone tamping on stone or wood counters who wants basic surface protection.",
@@ -2972,64 +2972,43 @@ export const products: Product[] = [
     ]
   },
   {
+    slug: "timemore-basic-2-coffee-scale",
+    name: "TIMEMORE Basic 2.0 Coffee Scale with Timer and Flow Rate",
+    brand: "TIMEMORE",
+    category: "kettles-scales",
+    tagline: "0.1 g coffee scale with a built-in timer and pour flow-rate readout",
+    summary: "The TIMEMORE Basic 2.0 is our Premium scale pick. It reads in 0.1 g steps up to 2 kg, runs a timer automatically, and shows water flow rate while you pour, which helps keep pour-over pours steady. A built-in rechargeable battery and a sealed charging port suit a wet coffee bar. Pick it over the Best Overall Maestri if you brew pour-over as often as espresso and want flow-rate feedback.",
+    tier: "$$$",
+    imageGradient: "from-neutral-900 via-zinc-800 to-stone-950",
+    imageAlt: "TIMEMORE Basic 2.0 coffee scale in black",
+    featured: false,
+    pros: ["Shows pour flow rate as well as weight and time", "0.1 g resolution up to 2 kg", "Rechargeable battery with a sealed charging port", "Low, compact body fits under most drippers"],
+    cons: ["Minimum starting weight is 0.5 g", "Auto-shutoff after about 3 minutes idle can interrupt slow brews"],
+    whoItsFor: "Home brewers who make pour-over and espresso and want a timer and flow-rate readout in one scale.",
+    specs: [{ label: "Capacity", value: "2 kg" }, { label: "Resolution", value: "0.1 g" }, { label: "Battery", value: "Built-in rechargeable" }, { label: "Extras", value: "Auto timer, flow rate" }],
+    relatedSlugs: ["maestri-espresso-scale", "maestri-s1-mini-scale", "hario-v60-02"],
+    amazonAsin: "B0CMZJP9V8",
+    amazonQuery: "TIMEMORE Basic 2.0 coffee scale",
+  },
+  {
     slug: "fellow-atmos",
-    name: "Fellow Atmos canister",
+    name: "Fellow Atmos Vacuum Coffee Canister 0.4L",
     brand: "Fellow",
     category: "coffee-canisters",
-    tagline: "Vacuum canister with a clear fill line for beans you won't finish this week",
-    summary: "The Fellow Atmos is our Best Overall pick for coffee canisters. Its vacuum lid pulls air out of the canister after each scoop, and a clear fill line shows how much is left. It is worth it if you buy bags faster than you brew them.",
+    tagline: "Twist-to-vacuum canister sized for one small bag of beans",
+    summary: "The Fellow Atmos is our Best Overall pick for coffee canisters and storage. Twisting the lid pumps air out of the canister after each scoop, and the lid's indicator shows when the seal is holding. This 0.4 L size holds about 6 oz of whole beans, so it suits people who buy small bags and want them to stay fresher for the second week.",
     tier: "$$",
     imageGradient: "from-stone-200 to-amber-100",
-    imageAlt: "Fellow Atmos coffee canister",
+    imageAlt: "Fellow Atmos 0.4L vacuum coffee canister in white",
     featured: false,
-    pros: ["Vacuum lid removes air after each opening", "Clear fill line shows how much is left"],
-    cons: ["Holds one bag at a time", "Vacuum lid adds a step every time you open it"],
-    whoItsFor: "People who buy coffee by the bag and brew it slowly.",
-    specs: [{ label: "Job", value: "Storage" }],
-    relatedSlugs: [],
+    pros: ["Twist lid removes air after every opening", "Lid indicator shows when the vacuum is holding", "Compact 0.4 L size fits a small bag of whole beans", "Simple design that's easy to wipe clean"],
+    cons: ["0.4 L holds about 6 oz, too small for a 12 oz bag", "Twisting the lid adds a step every time you open it"],
+    whoItsFor: "People who buy small bags of beans and brew them over two weeks or more.",
+    specs: [{ label: "Capacity", value: "0.4 L (about 6 oz beans)" }, { label: "Seal", value: "Twist-to-vacuum lid" }],
+    relatedSlugs: ["planetary-design-airscape-stainless-steel-coffee", "simple-modern-delta-coffee-canister-airtight", "coffee-gator-coffee-canister"],
     amazonAsin: "B07PWY7R6S",
     imageUrl: "/products/B07PWY7R6S.jpg",
-    amazonQuery: "Fellow Atmos coffee canister",
-  },
-  {
-    slug: "atmos-12",
-    name: "Fellow Atmos 1.2L",
-    brand: "Fellow",
-    category: "coffee-canisters",
-    tagline: "The larger 1.2 L Fellow Atmos vacuum canister",
-    summary: "The Fellow Atmos 1.2 L is the larger version of the Atmos vacuum canister, for bigger bags of beans.",
-    tier: "$$",
-    imageGradient: "from-stone-200 to-amber-100",
-    imageAlt: "Fellow Atmos 1.2L",
-    imageUrl: "/products/B07NPMNW84.jpg",
-    featured: false,
-    pros: ["Same vacuum lid as the smaller Atmos", "1.2 L size for bigger bags"],
-    cons: ["Larger footprint on the counter", "Vacuum lid adds a step every time you open it"],
-    whoItsFor: "People who buy larger bags and want a vacuum lid.",
-    specs: [{ label: "ASIN", value: "B07NPMNW84" }],
-    relatedSlugs: [],
-    amazonAsin: "B07NPMNW84",
-    amazonQuery: "Fellow Atmos 1.2L",
-  },
-  {
-    slug: "atmos-storage",
-    name: "Fellow Atmos 0.4L",
-    brand: "Fellow",
-    category: "coffee-storage",
-    tagline: "Small 0.4 L Fellow Atmos vacuum canister for one bag",
-    summary: "The Fellow Atmos 0.4 L is our Best Overall pick for coffee storage: a small vacuum canister sized for one bag of beans. The vacuum lid removes air after each opening, which helps when a bag lasts longer than a week.",
-    tier: "$$",
-    imageGradient: "from-stone-200 to-amber-100",
-    imageAlt: "Fellow Atmos 0.4L",
-    imageUrl: "/products/B07PWY7R6S.jpg",
-    featured: false,
-    pros: ["Vacuum lid removes air after each opening", "Small 0.4 L size for one bag"],
-    cons: ["0.4 L is too small for large bags", "Vacuum lid adds a step every time you open it"],
-    whoItsFor: "Single-bag households that brew slowly and want a vacuum lid.",
-    specs: [{ label: "ASIN", value: "B07PWY7R6S" }],
-    relatedSlugs: [],
-    amazonAsin: "B07PWY7R6S",
-    amazonQuery: "Fellow Atmos 0.4L",
+    amazonQuery: "Fellow Atmos vacuum coffee canister 0.4L",
   },
   {
     slug: "bodum-34oz-pour-over-coffee-maker",
@@ -3057,7 +3036,7 @@ export const products: Product[] = [
     brand: "Etekcity",
     category: "kettles-scales",
     tagline: "11 lb kitchen scale with 1 g steps, five units, and tare",
-    summary: "The Etekcity kitchen scale is our Value pick for kettles and scales: it weighs up to 11 lb (5 kg) in 1 g steps, switches between five units, and has a tare button and a wipe-clean 304 stainless steel platform. It is a cheap way to weigh beans and water for pour-over, though 1 g steps are coarse for espresso. When we checked on Oct 3, 2026, it was #1 on Amazon's Best Sellers list for Digital Kitchen Scales. Rated 4.6 out of 5 from 177,534 Amazon ratings at the time.",
+    summary: "The Etekcity kitchen scale is our Value pick for coffee scales: it weighs up to 11 lb (5 kg) in 1 g steps, switches between five units, and has a tare button and a wipe-clean 304 stainless steel platform. It is a cheap way to weigh beans and water for pour-over, though 1 g steps are coarse for espresso. When we checked on Oct 3, 2026, it was #1 on Amazon's Best Sellers list for Digital Kitchen Scales. Rated 4.6 out of 5 from 177,534 Amazon ratings at the time.",
     tier: "$",
     imageGradient: "from-rose-950 via-orange-900 to-amber-950",
     imageAlt: "Etekcity Food Kitchen Scale product photo",
@@ -3195,9 +3174,9 @@ export const products: Product[] = [
     slug: "cosori-gooseneck-electric-kettle-with-temperature",
     name: "Cosori Gooseneck Electric Kettle with Temperature Control",
     brand: "Cosori",
-    category: "kettles-scales",
+    category: "pour-over",
     tagline: "0.8 L gooseneck kettle with five temperature presets and a 1-hour hold",
-    summary: "The Cosori gooseneck kettle is our Premium pick for kettles and scales. It has five temperature presets, a hold function that keeps water warm for up to 1 hour, a gooseneck spout for controlled pour-over, and a 304 stainless steel interior, lid, and spout, running at 1,200 W. When we checked on Oct 3, 2026, it was #12 on Amazon's Best Sellers list for Electric Kettles. Rated 4.6 out of 5 from 19,583 Amazon ratings at the time.",
+    summary: "The Cosori gooseneck kettle pairs with any pour-over dripper. It has five temperature presets, a hold function that keeps water warm for up to 1 hour, a gooseneck spout for controlled pour-over, and a 304 stainless steel interior, lid, and spout, running at 1,200 W. When we checked on Oct 3, 2026, it was #12 on Amazon's Best Sellers list for Electric Kettles. Rated 4.6 out of 5 from 19,583 Amazon ratings at the time.",
     tier: "$$",
     imageGradient: "from-rose-950 via-orange-900 to-amber-950",
     imageAlt: "Cosori Gooseneck Electric Kettle with Temperature Control product photo",
@@ -3317,7 +3296,7 @@ export const products: Product[] = [
     brand: "Zulay Kitchen",
     category: "frothers-accessories",
     tagline: "Battery handheld whisk for frothing milk and mixing drinks",
-    summary: "The Zulay handheld frother is a battery-powered stainless whisk with a one-button switch. It froths milk you've already heated, and cleans by spinning it under running water. When we checked on Oct 3, 2026, it was #1 on Amazon's Best Sellers list for Milk Frothers. Rated 4.4 out of 5 from 239,671 Amazon ratings at the time.",
+    summary: "The Zulay handheld frother is our Value pick for frothers: a battery-powered stainless whisk with a one-button switch. It froths milk you've already heated, and cleans by spinning it under running water. When we checked on Oct 3, 2026, it was #1 on Amazon's Best Sellers list for Milk Frothers. Rated 4.4 out of 5 from 239,671 Amazon ratings at the time.",
     tier: "$",
     imageGradient: "from-sky-950 via-cyan-900 to-stone-950",
     imageAlt: "Zulay Kitchen Milk Frother Handheld Electric Whisk – Frother product photo",
@@ -3437,7 +3416,7 @@ export const products: Product[] = [
     brand: "Jura",
     category: "cleaning-maintenance",
     tagline: "Jura's cleaning tablets for its automatic coffee machines",
-    summary: "Jura's 64308 tablets are made for Jura automatic coffee machines, using one tablet per cleaning cycle to remove internal oil buildup. When we checked on Oct 3, 2026, it was #12 on Amazon's Best Sellers list for Coffee & Espresso Machine Cleaning Products. Rated 4.8 out of 5 from 4,349 Amazon ratings at the time.",
+    summary: "Jura's 64308 tablets are our Premium cleaning pick for owners of Jura super-automatic machines: Jura's own tablets, one per cleaning cycle, to remove internal oil buildup. Generic tablets exist, but Jura's are what its machines' cleaning programs are designed around. When we checked on Oct 3, 2026, it was #12 on Amazon's Best Sellers list for Coffee & Espresso Machine Cleaning Products. Rated 4.8 out of 5 from 4,349 Amazon ratings at the time.",
     tier: "$$",
     imageGradient: "from-zinc-800 via-stone-700 to-neutral-950",
     imageAlt: "Jura 64308 Cleaning Tablets for All Automatic Coffee Centers product photo",
@@ -3469,7 +3448,7 @@ export const products: Product[] = [
     cons: ["A window lets in some light, which coffee storage usually avoids", "Lid seal, not a vacuum pump"],
     whoItsFor: "Anyone who wants to see the fill level and track roast or open dates.",
     specs: [{ label: "Brand", value: "Veken" }, { label: "Material", value: "Plastic, Silicone, Stainless Steel" }, { label: "Color", value: "Black" }, { label: "Size", value: "22 oz" }, { label: "Capacity", value: "1.4 pounds" }],
-    relatedSlugs: ["fellow-atmos", "atmos-12", "planetary-design-airscape-stainless-steel-coffee"],
+    relatedSlugs: ["fellow-atmos", "planetary-design-airscape-stainless-steel-coffee"],
   },
   {
     slug: "planetary-design-airscape-stainless-steel-coffee",
@@ -3478,7 +3457,7 @@ export const products: Product[] = [
     category: "coffee-canisters",
     tagline: "Stainless canister with the Airscape plunger lid that pushes air out",
     summary: "The Planetary Design Airscape is our Premium pick for coffee canisters. Its patented inner plunger lid pushes air out of the canister before you seal it, and the stainless body stacks in a pantry. This medium size holds 64 fl oz. When we checked on Oct 3, 2026, it was #2 on Amazon's Best Sellers list for Coffee Storage Containers. Rated 4.8 out of 5 from 6,293 Amazon ratings at the time.",
-    tier: "$$",
+    tier: "$$$",
     imageGradient: "from-stone-200 to-amber-100",
     imageAlt: "Planetary Design Airscape Stainless Steel Coffee Canister product photo",
     imageUrl: "/products/B09NP55LSG.jpg",
@@ -3489,7 +3468,7 @@ export const products: Product[] = [
     cons: ["Plunger adds a step each time you open it", "Larger than you need for a single 12 oz bag"],
     whoItsFor: "People who want an air-removing lid without a battery or pump.",
     specs: [{ label: "Brand", value: "Planetary Design" }, { label: "Material", value: "Stainless Steel" }, { label: "Color", value: "Brushed Copper" }, { label: "Size", value: "Medium" }, { label: "Capacity", value: "64 fluid ounces" }],
-    relatedSlugs: ["fellow-atmos", "atmos-12", "veken-coffee-canister-with-window"],
+    relatedSlugs: ["fellow-atmos", "planetary-design-airscape-stainless-steel-coffee", "veken-coffee-canister-with-window"],
   },
   {
     slug: "kivy-vacuum-coffee-canister",
@@ -3509,7 +3488,7 @@ export const products: Product[] = [
     cons: ["Check how the vacuum is created before buying", "No date tracker listed"],
     whoItsFor: "Coffee drinkers who want a vacuum-style stainless canister at a mid price.",
     specs: [{ label: "Brand", value: "KIVY" }, { label: "Material", value: "Stainless Steel" }, { label: "Color", value: "Black" }, { label: "Size", value: "Medium" }, { label: "Capacity", value: "32 fluid ounces" }],
-    relatedSlugs: ["fellow-atmos", "atmos-12", "veken-coffee-canister-with-window"],
+    relatedSlugs: ["fellow-atmos", "planetary-design-airscape-stainless-steel-coffee", "veken-coffee-canister-with-window"],
   },
   {
     slug: "tourdeus-glass-coffee-bean-canister",
@@ -3529,7 +3508,7 @@ export const products: Product[] = [
     cons: ["Clear glass lets light in, so store it in a cupboard", "10 oz holds less than a standard 12 oz bag"],
     whoItsFor: "Small households storing less than a full bag.",
     specs: [{ label: "Brand", value: "Tourdeus" }, { label: "Material", value: "Borosilicate Glass" }, { label: "Color", value: "10 oz - Clear" }, { label: "Capacity", value: "10 ounces" }, { label: "Item Weight", value: "10.88 ounces" }],
-    relatedSlugs: ["fellow-atmos", "atmos-12", "veken-coffee-canister-with-window"],
+    relatedSlugs: ["fellow-atmos", "planetary-design-airscape-stainless-steel-coffee", "veken-coffee-canister-with-window"],
   },
   {
     slug: "coffee-gator-coffee-canister",
@@ -3549,7 +3528,7 @@ export const products: Product[] = [
     cons: ["11 oz is small for larger bags", "Lid seal, not an active vacuum"],
     whoItsFor: "People who buy small bags and want a cheap, light-blocking canister.",
     specs: [{ label: "Brand", value: "Coffee Gator" }, { label: "Material", value: "Stainless Steel" }, { label: "Color", value: "Gray" }, { label: "Size", value: "11oz" }, { label: "Capacity", value: "11 ounces" }],
-    relatedSlugs: ["fellow-atmos", "atmos-12", "veken-coffee-canister-with-window"],
+    relatedSlugs: ["fellow-atmos", "planetary-design-airscape-stainless-steel-coffee", "veken-coffee-canister-with-window"],
   },
   {
     slug: "yszaxnsr-15oz-coffee-canister",
@@ -3569,7 +3548,7 @@ export const products: Product[] = [
     cons: ["Plastic body is less light-blocking than steel", "No CO2 valve listed"],
     whoItsFor: "Pantries that want a stackable, wide-mouth canister for coffee and dry goods.",
     specs: [{ label: "Brand", value: "Yszaxnsr" }, { label: "Material", value: "Plastic" }, { label: "Color", value: "dark brown" }, { label: "Size", value: "4.84 inches (diameter) x 5.91 inches (height)" }, { label: "Capacity", value: "1.3 liters" }],
-    relatedSlugs: ["fellow-atmos", "atmos-12", "veken-coffee-canister-with-window"],
+    relatedSlugs: ["fellow-atmos", "planetary-design-airscape-stainless-steel-coffee", "veken-coffee-canister-with-window"],
   },
   {
     slug: "hb-design-co-airtight-coffee-canister",
@@ -3589,7 +3568,7 @@ export const products: Product[] = [
     cons: ["No CO2 valve listed", "Large size is more than one bag needs"],
     whoItsFor: "Households that buy coffee in bulk or store pods.",
     specs: [{ label: "Brand", value: "HB Design Co." }, { label: "Material", value: "Bamboo, Iron" }, { label: "Color", value: "Black" }, { label: "Capacity", value: "1.18 liters" }, { label: "Item Weight", value: "0.61 kg" }],
-    relatedSlugs: ["fellow-atmos", "atmos-12", "veken-coffee-canister-with-window"],
+    relatedSlugs: ["fellow-atmos", "planetary-design-airscape-stainless-steel-coffee", "veken-coffee-canister-with-window"],
   },
   {
     slug: "lryybti-coffee-canisters-with-window-airtight",
@@ -3609,16 +3588,16 @@ export const products: Product[] = [
     cons: ["A window lets in some light", "No vacuum pump"],
     whoItsFor: "Anyone who wants a cheap windowed canister with a date tracker.",
     specs: [{ label: "Brand", value: "LRYYBTI" }, { label: "Material", value: "Stainless Steel" }, { label: "Color", value: "Black" }, { label: "Size", value: "22 oz" }, { label: "Capacity", value: "1.4 pounds" }],
-    relatedSlugs: ["fellow-atmos", "atmos-12", "veken-coffee-canister-with-window"],
+    relatedSlugs: ["fellow-atmos", "planetary-design-airscape-stainless-steel-coffee", "veken-coffee-canister-with-window"],
   },
   {
     slug: "simple-modern-delta-coffee-canister-airtight",
     name: "Simple Modern Delta Coffee Canister | Airtight Vacuum Seal",
     brand: "Simple Modern",
-    category: "coffee-storage",
+    category: "coffee-canisters",
     tagline: "1.1 L rechargeable canister that reseals its own vacuum",
-    summary: "The Simple Modern Delta is our Premium pick for coffee storage. Its Auto Reseal system keeps the vacuum sealed automatically, running up to 3 months per charge, and the ceramic-lined 1.1 L vessel fits a standard 12 oz bag. When we checked on Oct 3, 2026, it was #14 on Amazon's Best Sellers list for Coffee Storage Containers. Rated 4.4 out of 5 from 109 Amazon ratings at the time.",
-    tier: "$$",
+    summary: "The Simple Modern Delta is a powered vacuum canister. Its Auto Reseal system keeps the vacuum sealed automatically, running up to 3 months per charge, and the ceramic-lined 1.1 L vessel fits a standard 12 oz bag. When we checked on Oct 3, 2026, it was #14 on Amazon's Best Sellers list for Coffee Storage Containers. Rated 4.4 out of 5 from 109 Amazon ratings at the time.",
+    tier: "$$$",
     imageGradient: "from-stone-700 via-amber-900 to-stone-900",
     imageAlt: "Simple Modern Delta Coffee Canister | Airtight Vacuum Seal product photo",
     imageUrl: "/products/B0FWFZXHF7.jpg",
@@ -3629,13 +3608,13 @@ export const products: Product[] = [
     cons: ["Battery needs recharging", "More parts to care for than a plain canister"],
     whoItsFor: "People who want a hands-off vacuum seal and don't mind charging it.",
     specs: [{ label: "Brand", value: "Simple Modern" }, { label: "Material", value: "Ceramic, Stainless Steel" }, { label: "Color", value: "- Midnight Black" }, { label: "Size", value: "1.1L" }, { label: "Capacity", value: "1.1 liters" }],
-    relatedSlugs: ["atmos-storage", "gaiakallon-vacuum-coffee-canister", "styled-settings-coffee-storage-container"],
+    relatedSlugs: ["fellow-atmos", "gaiakallon-vacuum-coffee-canister", "styled-settings-coffee-storage-container"],
   },
   {
     slug: "gaiakallon-vacuum-coffee-canister",
     name: "GAIAKALLON Vacuum Coffee Canister",
     brand: "GAIAKALLON",
-    category: "coffee-storage",
+    category: "coffee-canisters",
     tagline: "46 fl oz stainless canister with a walnut vacuum lid and CO2 valve",
     summary: "The GAIAKALLON canister is a 46 fl oz, 304 stainless jar that holds about 16 oz of beans, with an inner lid carrying a one-way CO2 valve and silicone seal under a walnut outer cover. When we checked on Oct 3, 2026, it was #15 on Amazon's Best Sellers list for Coffee Storage Containers. Rated 4.5 out of 5 from 225 Amazon ratings at the time.",
     tier: "$$",
@@ -3649,13 +3628,13 @@ export const products: Product[] = [
     cons: ["Two lids add a step each time", "Wood lid needs gentle hand cleaning"],
     whoItsFor: "People storing a full pound of beans who want a valve and inner lid.",
     specs: [{ label: "Brand", value: "GAIAKALLON" }, { label: "Material", value: "Stainless Steel" }, { label: "Color", value: "Black" }, { label: "Size", value: "46 fl.oz" }, { label: "Capacity", value: "46 fluid ounces" }],
-    relatedSlugs: ["atmos-storage", "simple-modern-delta-coffee-canister-airtight", "styled-settings-coffee-storage-container"],
+    relatedSlugs: ["fellow-atmos", "simple-modern-delta-coffee-canister-airtight", "styled-settings-coffee-storage-container"],
   },
   {
     slug: "styled-settings-coffee-storage-container",
     name: "STYLED SETTINGS Coffee Storage Container",
     brand: "STYLED SETTINGS",
-    category: "coffee-storage",
+    category: "coffee-canisters",
     tagline: "Stainless vacuum canister with a dual lid and removable filter",
     summary: "The STYLED SETTINGS canister is a 304 stainless steel vacuum container with a dual-lid system and a removable filter, sized at 16 oz. When we checked on Oct 3, 2026, it was #16 on Amazon's Best Sellers list for Coffee Storage Containers. Rated 4.8 out of 5 from 150 Amazon ratings at the time.",
     tier: "$$",
@@ -3669,13 +3648,13 @@ export const products: Product[] = [
     cons: ["16 oz capacity", "Dual lid adds a step each time"],
     whoItsFor: "Anyone storing beans or grounds who wants a dual-lid stainless canister.",
     specs: [{ label: "Brand", value: "STYLED SETTINGS" }, { label: "Material", value: "Stainless Steel" }, { label: "Color", value: "Black" }, { label: "Size", value: "4.5 inches (L) x 6.8 inches (H)" }, { label: "Capacity", value: "16 ounces" }],
-    relatedSlugs: ["atmos-storage", "simple-modern-delta-coffee-canister-airtight", "gaiakallon-vacuum-coffee-canister"],
+    relatedSlugs: ["fellow-atmos", "simple-modern-delta-coffee-canister-airtight", "gaiakallon-vacuum-coffee-canister"],
   },
   {
     slug: "voonsctm-glass-jars-with-lids",
     name: "Voonsctm Glass Jars With Lids",
     brand: "Voonsctm",
-    category: "coffee-storage",
+    category: "coffee-canisters",
     tagline: "24 oz glass jar with a natural wood lid",
     summary: "The Voonsctm jar is a 24 oz glass container with a natural wood lid, for coffee, tea, or sugar. When we checked on Oct 3, 2026, it was #18 on Amazon's Best Sellers list for Coffee Storage Containers. Rated 4.5 out of 5 from 29 Amazon ratings at the time.",
     tier: "$",
@@ -3689,16 +3668,16 @@ export const products: Product[] = [
     cons: ["Clear glass lets light in", "No airtight vacuum or CO2 valve listed"],
     whoItsFor: "Countertops that want a simple glass jar more than a vacuum seal.",
     specs: [{ label: "Brand", value: "Voonsctm" }, { label: "Material", value: "Glass" }, { label: "Color", value: "Clear Sunburst, 24oz/700ml" }, { label: "Capacity", value: "1.5 pounds" }, { label: "Item Weight", value: "1.1 pounds" }],
-    relatedSlugs: ["atmos-storage", "simple-modern-delta-coffee-canister-airtight", "gaiakallon-vacuum-coffee-canister"],
+    relatedSlugs: ["fellow-atmos", "simple-modern-delta-coffee-canister-airtight", "gaiakallon-vacuum-coffee-canister"],
   },
   {
     slug: "ohtomber-22oz-stainless-steel-airtight-coffee",
     name: "Ohtomber 22oz Stainless Steel Airtight Coffee Canister",
     brand: "Ohtomber",
-    category: "coffee-storage",
+    category: "coffee-canisters",
     tagline: "22 oz stainless canister with a locking lid, CO2 valve, and date tracker",
     summary: "The Ohtomber canister is a 22 oz, 304 stainless steel jar with a locking lid, a one-way CO2 valve, a date tracker, and a scoop. When we checked on Oct 3, 2026, it was #19 on Amazon's Best Sellers list for Coffee Storage Containers. Rated 4.6 out of 5 from 717 Amazon ratings at the time.",
-    tier: "$$",
+    tier: "$",
     imageGradient: "from-stone-700 via-amber-900 to-stone-900",
     imageAlt: "Ohtomber 22oz Stainless Steel Airtight Coffee Canister product photo",
     imageUrl: "/products/B0D4PN6XN9.jpg",
@@ -3709,15 +3688,15 @@ export const products: Product[] = [
     cons: ["22 oz fits about one bag", "No active vacuum"],
     whoItsFor: "People who want a valve and date tracker in a stainless canister.",
     specs: [{ label: "Brand", value: "Ohtomber" }, { label: "Material", value: "Stainless Steel" }, { label: "Color", value: "Black" }, { label: "Size", value: "22 ounces" }, { label: "Capacity", value: "1.4 pounds" }],
-    relatedSlugs: ["atmos-storage", "simple-modern-delta-coffee-canister-airtight", "gaiakallon-vacuum-coffee-canister"],
+    relatedSlugs: ["fellow-atmos", "simple-modern-delta-coffee-canister-airtight", "gaiakallon-vacuum-coffee-canister"],
   },
   {
     slug: "oggi-stainless-steel-coffee-canister-62",
     name: "Oggi Stainless Steel Coffee Canister 62 fl oz - Airtight Clamp",
     brand: "Oggi",
-    category: "coffee-storage",
+    category: "coffee-canisters",
     tagline: "Large 62 fl oz stainless canister with a clear clamp lid",
-    summary: "The Oggi 62 fl oz canister is our Value pick for coffee storage: a large food-grade stainless jar with a clear BPA-free lid, a silicone gasket, and locking clamps. The clear lid lets you see the beans, so keep it out of direct light. When we checked on Oct 3, 2026, it was #20 on Amazon's Best Sellers list for Food Jars & Canisters. Rated 4.5 out of 5 from 8,501 Amazon ratings at the time.",
+    summary: "The Oggi 62 fl oz canister is a large food-grade stainless jar with a clear BPA-free lid, a silicone gasket, and locking clamps. The clear lid lets you see the beans, so keep it out of direct light. When we checked on Oct 3, 2026, it was #20 on Amazon's Best Sellers list for Food Jars & Canisters. Rated 4.5 out of 5 from 8,501 Amazon ratings at the time.",
     tier: "$",
     imageGradient: "from-stone-700 via-amber-900 to-stone-900",
     imageAlt: "Oggi Stainless Steel Coffee Canister 62 fl oz - Airtight Clamp product photo",
@@ -3729,13 +3708,13 @@ export const products: Product[] = [
     cons: ["Clear lid lets light reach the beans", "No CO2 valve listed"],
     whoItsFor: "Bulk buyers who want a large clamp-lid canister on a budget.",
     specs: [{ label: "Brand", value: "Oggi" }, { label: "Material", value: "Stainless Steel" }, { label: "Color", value: "Silver" }, { label: "Size", value: "5 x 7.5\" / 62 fl oz" }, { label: "Capacity", value: "3.9 pounds" }],
-    relatedSlugs: ["atmos-storage", "simple-modern-delta-coffee-canister-airtight", "gaiakallon-vacuum-coffee-canister"],
+    relatedSlugs: ["fellow-atmos", "simple-modern-delta-coffee-canister-airtight", "gaiakallon-vacuum-coffee-canister"],
   },
   {
     slug: "comsaf-glass-coffee-canister-jar-with",
     name: "ComSaf Glass Coffee Canister Jar with Acacia Wood Lid 34 oz",
     brand: "ComSaf",
-    category: "coffee-storage",
+    category: "coffee-canisters",
     tagline: "34 oz glass jar with an acacia wood lid",
     summary: "The ComSaf jar is a 34 oz glass canister with an acacia wood lid and silicone gasket, and a wide opening for scooping. When we checked on Oct 3, 2026, it was #23 on Amazon's Best Sellers list for Coffee Storage Containers. Rated 4.6 out of 5 from 52 Amazon ratings at the time.",
     tier: "$",
@@ -3749,16 +3728,16 @@ export const products: Product[] = [
     cons: ["Clear glass lets light in", "No CO2 valve listed"],
     whoItsFor: "Counters that want an inexpensive glass jar for beans or grounds.",
     specs: [{ label: "Brand", value: "ComSaf" }, { label: "Material", value: "Acacia Wood, Glass" }, { label: "Color", value: "Clear" }, { label: "Size", value: "Large" }, { label: "Capacity", value: "1 liters" }],
-    relatedSlugs: ["atmos-storage", "simple-modern-delta-coffee-canister-airtight", "gaiakallon-vacuum-coffee-canister"],
+    relatedSlugs: ["fellow-atmos", "simple-modern-delta-coffee-canister-airtight", "gaiakallon-vacuum-coffee-canister"],
   },
   {
     slug: "airscape-by-planetary-design",
     name: "Airscape by Planetary Design",
     brand: "AirScape",
-    category: "coffee-storage",
+    category: "coffee-canisters",
     tagline: "Kilo-size Airscape canister with a plunger lid and two-way valve",
     summary: "This Airscape canister uses Planetary Design's patented inner plunger lid with a two-way valve to push air out and keep humidity out, in a kilo size that holds about 1.1 kg. When we checked on Oct 3, 2026, it was #23 on Amazon's Best Sellers list for Food Jars & Canisters. Rated 4.8 out of 5 from 6,193 Amazon ratings at the time.",
-    tier: "$$",
+    tier: "$$$",
     imageGradient: "from-stone-700 via-amber-900 to-stone-900",
     imageAlt: "Airscape by Planetary Design product photo",
     imageUrl: "/products/B07W6RKJVF.jpg",
@@ -3769,13 +3748,13 @@ export const products: Product[] = [
     cons: ["Large for a single bag", "Plunger adds a step each time"],
     whoItsFor: "Bulk buyers who want the Airscape plunger in a kilo size.",
     specs: [{ label: "Brand", value: "AirScape" }, { label: "Material", value: "Alloy Steel" }, { label: "Color", value: "Matte Black" }, { label: "Size", value: "Kilo" }, { label: "Capacity", value: "1.1 kg" }],
-    relatedSlugs: ["atmos-storage", "simple-modern-delta-coffee-canister-airtight", "gaiakallon-vacuum-coffee-canister"],
+    relatedSlugs: ["fellow-atmos", "simple-modern-delta-coffee-canister-airtight", "gaiakallon-vacuum-coffee-canister"],
   },
   {
     slug: "coffee-gator-coffee-canister-2",
     name: "Coffee Gator Coffee Canister",
     brand: "Coffee Gator",
-    category: "coffee-storage",
+    category: "coffee-canisters",
     tagline: "22 oz stainless canister with a CO2 valve and date wheel",
     summary: "The 22 oz Coffee Gator is a stainless steel canister with a one-way CO2 valve and a calendar date wheel. When we checked on Oct 3, 2026, it was #24 on Amazon's Best Sellers list for Coffee Storage Containers. Rated 4.7 out of 5 from 10,927 Amazon ratings at the time.",
     tier: "$$",
@@ -3789,7 +3768,7 @@ export const products: Product[] = [
     cons: ["No active vacuum", "Larger than you need for small bags"],
     whoItsFor: "People storing a full bag who want a vented, light-blocking canister.",
     specs: [{ label: "Brand", value: "Coffee Gator" }, { label: "Material", value: "Stainless Steel" }, { label: "Color", value: "Black" }, { label: "Size", value: "22oz" }, { label: "Capacity", value: "650 g" }],
-    relatedSlugs: ["atmos-storage", "simple-modern-delta-coffee-canister-airtight", "gaiakallon-vacuum-coffee-canister"],
+    relatedSlugs: ["fellow-atmos", "simple-modern-delta-coffee-canister-airtight", "gaiakallon-vacuum-coffee-canister"],
   },
 ];
 

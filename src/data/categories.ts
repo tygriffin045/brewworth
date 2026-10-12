@@ -20,14 +20,14 @@ export const categories: Category[] = [
     name: "Pour-Over & Brewers",
     shortLabel: "Pour-Over",
     description:
-      "V60s, Chemex, Switch, AeroPress, Kalita, and SCA-minded drip (Moccamaster) for clean filter cups — the ritual that pairs with any espresso bar.",
+      "V60s, Chemex, Switch, AeroPress, Kalita, gooseneck kettles, and SCA-minded drip (Moccamaster) for clean filter cups — the ritual that pairs with any espresso bar.",
   },
   {
     slug: "kettles-scales",
-    name: "Kettles & Scales",
-    shortLabel: "Kettles",
+    name: "Coffee Scales",
+    shortLabel: "Scales",
     description:
-      "Temperature-controlled kettles and 0.1g scales for pour-over, bloom timing, and dialing espresso ratios without guesswork.",
+      "0.1g espresso scales and everyday kitchen scales for pour-over, bloom timing, and dialing espresso ratios without guesswork.",
   },
   {
     slug: "travel-espresso",
@@ -52,15 +52,9 @@ export const categories: Category[] = [
   },
   {
     slug: "coffee-canisters",
-    name: "Coffee Canisters",
+    name: "Coffee Canisters & Storage",
     shortLabel: "Canisters",
-    description: "Storage that keeps an open bag from going stale before you finish it.",
-  },
-  {
-    slug: "coffee-storage",
-    name: "Coffee Storage",
-    shortLabel: "Storage",
-    description: "Airtight canisters and vacuum containers that keep beans from going stale in a week.",
+    description: "Vacuum canisters, airtight jars and storage containers that keep an open bag of beans from going stale before you finish it.",
   },
 ];
 

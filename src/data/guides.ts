@@ -181,7 +181,7 @@ export const guides: Guide[] = [
       "wacaco-picopresso",
       "outin-nano",
       "wacaco-pixapresso",
-      "timemore-chestnut-c3",
+      "timemore-chestnut-c2s",
       "aeropress-original"
     ],
     sections: [
@@ -420,7 +420,7 @@ export const guides: Guide[] = [
       "aeropress-original",
       "hario-v60-02",
       "chemex-classic-6-cup",
-      "timemore-chestnut-c3"
+      "timemore-chestnut-c2s"
     ],
     sections: [
       {
@@ -481,7 +481,7 @@ export const guides: Guide[] = [
     readingTime: "8 min read",
     publishedAt: "2026-09-19",
     productSlugs: [
-      "timemore-chestnut-c3",
+      "timemore-chestnut-c2s",
       "hario-skerton-pro",
       "comandante-c40",
       "hario-switch-02",
