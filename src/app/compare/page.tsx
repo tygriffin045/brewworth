@@ -3,6 +3,7 @@ import { DEFAULT_OG_IMAGE } from "@/lib/site";
 import Link from "next/link";
 import { getProduct } from "@/data/products";
 import { AffiliateButton } from "@/components/AffiliateButton";
+import { TierBadge } from "@/components/TierBadge";
 import type { ReactNode } from "react";
 import { getAffiliateUrl } from "@/lib/affiliate";
 
@@ -41,13 +42,14 @@ const rows: { label: string; key: (slug: string) => ReactNode }[] = [
         href={getAffiliateUrl({ slug: s, amazonAsin: getProduct(s)!.amazonAsin })}
         target="_blank"
         rel="nofollow sponsored noopener noreferrer"
+        aria-label={`Check price on Amazon: ${getProduct(s)!.name}`}
         className="font-semibold text-[#c45c26] underline underline-offset-2"
       >
         Check price on Amazon
       </a>
     ),
   },
-  { label: "Budget tier", key: (s) => getProduct(s)!.budget },
+  { label: "Budget tier", key: (s) => <TierBadge tier={getProduct(s)!.tier} /> },
   {
     label: "Boiler",
     key: (s) =>

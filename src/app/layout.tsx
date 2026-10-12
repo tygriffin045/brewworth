@@ -21,7 +21,7 @@ const serif = Source_Serif_4({
 
 const SITE_TITLE = "BrewWorth — Honest picks for better home coffee";
 const SITE_DESCRIPTION =
-  "Editorial reviews and buying guides for espresso machines, grinders, kettles, scales, frothers, and home barista accessories.";
+  "Editorial reviews and buying guides for espresso machines, grinders, scales, frothers, and home barista accessories.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),

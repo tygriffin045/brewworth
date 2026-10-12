@@ -6,10 +6,9 @@ export type CategorySlug =
   | "frothers-accessories"
   | "pour-over"
   | "travel-espresso"
-  | "cleaning-maintenance"
-  | "coffee-storage";
+  | "cleaning-maintenance";
 
-export type BudgetBand = "budget" | "mid" | "premium";
+export type BudgetTier = "$" | "$$" | "$$$";
 
 export interface ProductSpec {
   label: string;
@@ -23,10 +22,8 @@ export interface Product {
   category: CategorySlug;
   tagline: string;
   summary: string;
-  priceBand: string;
-  budget: BudgetBand;
-  priceMin: number;
-  priceMax: number;
+  /** Budget tier from internal per-category price thresholds (lower/middle/top third; cheap categories capped at $$). Never show prices. */
+  tier: BudgetTier;
   imageGradient: string;
   imageAlt: string;
   /** Local product image under /products when available */

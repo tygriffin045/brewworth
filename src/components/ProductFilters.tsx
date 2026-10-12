@@ -1,25 +1,25 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import type { Product, CategorySlug, BudgetBand } from "@/data/types";
+import type { Product, CategorySlug, BudgetTier } from "@/data/types";
 import { categories } from "@/data/categories";
 import { ProductCard } from "./ProductCard";
 
-const budgets: { value: BudgetBand | "all"; label: string }[] = [
-  { value: "all", label: "All budgets" },
-  { value: "budget", label: "Budget" },
-  { value: "mid", label: "Mid-range" },
-  { value: "premium", label: "Premium" },
+const budgets: { value: BudgetTier | "all"; label: string }[] = [
+  { value: "all", label: "All tiers" },
+  { value: "$", label: "$ Budget" },
+  { value: "$$", label: "$$ Mid-range" },
+  { value: "$$$", label: "$$$ Premium" },
 ];
 
 export function ProductFilters({ products }: { products: Product[] }) {
   const [category, setCategory] = useState<CategorySlug | "all">("all");
-  const [budget, setBudget] = useState<BudgetBand | "all">("all");
+  const [budget, setBudget] = useState<BudgetTier | "all">("all");
 
   const filtered = useMemo(() => {
     return products.filter((p) => {
       if (category !== "all" && p.category !== category) return false;
-      if (budget !== "all" && p.budget !== budget) return false;
+      if (budget !== "all" && p.tier !== budget) return false;
       return true;
     });
   }, [products, category, budget]);
@@ -45,10 +45,10 @@ export function ProductFilters({ products }: { products: Product[] }) {
           </select>
         </label>
         <label className="flex flex-col gap-1 text-sm text-[#5c4a3a]">
-          Budget
+          Budget tier
           <select
             value={budget}
-            onChange={(e) => setBudget(e.target.value as BudgetBand | "all")}
+            onChange={(e) => setBudget(e.target.value as BudgetTier | "all")}
             className="rounded-lg border border-amber-900/20 bg-white px-3 py-2 text-[#2a1a12]"
           >
             {budgets.map((b) => (

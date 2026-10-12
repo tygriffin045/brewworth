@@ -9,7 +9,11 @@ const nextConfig: NextConfig = {
       { source: "/products/timemore-black-mirror", destination: "/categories/kettles-scales", permanent: true },
       { source: "/products/acaia-pearl", destination: "/categories/kettles-scales", permanent: true },
       { source: "/products/timemore-grinder-brush", destination: "/categories/cleaning-maintenance", permanent: true },
-      { source: "/products/fellow-atmos-canister", destination: "/products/atmos-storage", permanent: true },
+      { source: "/products/fellow-atmos-canister", destination: "/products/fellow-atmos", permanent: true },
+      { source: "/products/atmos-storage", destination: "/products/fellow-atmos", permanent: true },
+      { source: "/products/atmos-12", destination: "/products/fellow-atmos", permanent: true },
+      { source: "/products/timemore-chestnut-c3", destination: "/products/timemore-chestnut-c2s", permanent: true },
+      { source: "/categories/coffee-storage", destination: "/categories/coffee-canisters", permanent: true },
     ];
   },
   images: {

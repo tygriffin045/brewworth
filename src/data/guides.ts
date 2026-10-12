@@ -5,8 +5,8 @@ export const guides: Guide[] = [
   ...buyerIntentGuides,
   {
     slug: "best-espresso-machines-under-400",
-    title: "Best Espresso Machines Under $400 for Beginners",
-    description: "What actually matters under $400 — heat-up time, steam, portafilter size, and why the grinder matters more than the badge on the machine.",
+    title: "Best Entry-Level Espresso Machines for Beginners",
+    description: "What actually matters in an entry-level machine — heat-up time, steam, portafilter size, and why the grinder matters more than the badge on the machine.",
     readingTime: "9 min read",
     publishedAt: "2026-08-18",
     productSlugs: [
@@ -18,16 +18,16 @@ export const guides: Guide[] = [
     ],
     sections: [
       {
-        heading: "Under $400 is about workflow, not café trophies",
+        heading: "Entry-level is about workflow, not café trophies",
         body: "At this budget you’re buying heat-up speed, a usable steam wand, and a machine that won’t fight you every morning. The Breville Bambino wins for most beginners: near-instant heat-up and a compact footprint. The De’Longhi Dedica is the slim apartment pick. The Gaggia Classic Evo Pro sometimes dips near this range on sale — it’s more prosumer, with a 58mm portafilter and a steeper learning curve."
       },
       {
         heading: "Budget for the grinder or you’ll hate the machine",
-        body: "A $300 machine with pre-ground or a blade grinder will taste worse than a $200 machine paired with a Baratza Encore ESP. Fresh, fine, consistent grounds are the difference between sour/bitter roulette and a shot you look forward to. If your total budget is $400, consider Bambino + used/sale grinder — or Dedica + Encore ESP if you can stretch slightly."
+        body: "A pricier machine with pre-ground coffee or a blade grinder will taste worse than a cheaper machine paired with a Baratza Encore ESP. Fresh, fine, consistent grounds are the difference between sour/bitter roulette and a shot you look forward to. On a tight entry-level budget, consider Bambino + used/sale grinder — or Dedica + Encore ESP if you can stretch slightly."
       },
       {
         heading: "Steam, baskets, and expectations",
-        body: "Single-boiler and thermoblock machines need a pause between brewing and steaming. That’s normal. Pressurized baskets forgive bad grind; non-pressurized baskets taste better once your grinder is ready. Don’t chase dual-boiler dreams under $400 — chase consistency and a routine you’ll keep."
+        body: "Single-boiler and thermoblock machines need a pause between brewing and steaming. That’s normal. Pressurized baskets forgive bad grind; non-pressurized baskets taste better once your grinder is ready. Don’t chase dual-boiler dreams at entry level — chase consistency and a routine you’ll keep."
       },
       {
         heading: "Our shortlist",
@@ -103,7 +103,7 @@ export const guides: Guide[] = [
   },
   {
     slug: "home-barista-setup-under-500",
-    title: "Complete Home Barista Setup Under $500",
+    title: "Complete Home Barista Setup on a Budget",
     description: "A realistic cart: machine + grinder + scale + pitcher — phased so you taste progress without blowing the budget on day one.",
     readingTime: "11 min read",
     publishedAt: "2026-09-10",
@@ -119,8 +119,8 @@ export const guides: Guide[] = [
     ],
     sections: [
       {
-        heading: "The $500 reality check",
-        body: "You cannot buy a dual-boiler flagship, a flat-burr dream grinder, and an Acaia scale for $500. You can build a setup that makes satisfying espresso and milk drinks every day. Prioritize: (1) capable entry machine, (2) espresso-capable grinder, (3) 0.1g scale, (4) pitcher. Accessories come after taste is dialed."
+        heading: "The budget reality check",
+        body: "You cannot buy a dual-boiler flagship, a flat-burr dream grinder, and an Acaia scale on a starter budget. You can build a setup that makes satisfying espresso and milk drinks every day. Prioritize: (1) capable entry machine, (2) espresso-capable grinder, (3) 0.1g scale, (4) pitcher. Accessories come after taste is dialed."
       },
       {
         heading: "Phase 1: machine + grinder",
@@ -132,7 +132,7 @@ export const guides: Guide[] = [
       },
       {
         heading: "Phase 3: weekend brewers (optional)",
-        body: "An AeroPress covers travel and “I don’t want to pull a shot” mornings for little money. A Fellow Stagg EKG is a later pour-over luxury if filter coffee is part of your week. Under $500, finish espresso fundamentals before collecting gear."
+        body: "An AeroPress covers travel and “I don’t want to pull a shot” mornings for little money. A Fellow Stagg EKG is a later pour-over luxury if filter coffee is part of your week. On a starter budget, finish espresso fundamentals before collecting gear."
       }
     ]
   },
@@ -166,7 +166,7 @@ export const guides: Guide[] = [
       },
       {
         heading: "Water, ratios, and expectations",
-        body: "Start around 1:16 coffee-to-water, 200–205°F for medium roasts, and change one variable at a time. Flat-bottom drippers forgive more; V60 punishes uneven pours and bad grind. If your espresso bar already has a scale and kettle, pour-over is an inexpensive dripper away — not another $500 rabbit hole."
+        body: "Start around 1:16 coffee-to-water, 200–205°F for medium roasts, and change one variable at a time. Flat-bottom drippers forgive more; V60 punishes uneven pours and bad grind. If your espresso bar already has a scale and kettle, pour-over is an inexpensive dripper away — not another expensive rabbit hole."
       }
     ]
   },
@@ -181,7 +181,7 @@ export const guides: Guide[] = [
       "wacaco-picopresso",
       "outin-nano",
       "wacaco-pixapresso",
-      "timemore-chestnut-c3",
+      "timemore-chestnut-c2s",
       "aeropress-original"
     ],
     sections: [
@@ -238,14 +238,14 @@ export const guides: Guide[] = [
       },
       {
         heading: "The checklist before you click Buy",
-        body: "(1) Where will it live, measured. (2) Grinder plan funded. (3) Water hardness plan (descaler on the shelf). (4) Milk wand vs auto froth preference. (5) Willingness to clean a group head weekly. If you can’t answer those, you’re shopping for a fantasy café — pause and read our under-$500 setup guide first."
+        body: "(1) Where will it live, measured. (2) Grinder plan funded. (3) Water hardness plan (descaler on the shelf). (4) Milk wand vs auto froth preference. (5) Willingness to clean a group head weekly. If you can’t answer those, you’re shopping for a fantasy café — pause and read our budget setup guide first."
       }
     ]
   },
   {
     slug: "best-milk-frothers-latte-art",
     title: "Best Milk Frothers for Latte Art Beginners",
-    description: "Steam wand vs NanoFoamer vs electric pitchers — how to get microfoam without a $2,000 dual boiler.",
+    description: "Steam wand vs NanoFoamer vs electric pitchers — how to get microfoam without a high-end dual boiler.",
     readingTime: "9 min read",
     publishedAt: "2026-09-11",
     productSlugs: [
@@ -309,8 +309,8 @@ export const guides: Guide[] = [
   },
   {
     slug: "best-espresso-machines-under-1000",
-    title: "Best Espresso Machines Under $1000",
-    description: "From Bambino Plus to Barista Pro, Classic Evo Pro, La Specialista, and Silvia — what we’d buy at every rung below $1,000.",
+    title: "Best Mid-Range Espresso Machines",
+    description: "From Bambino Plus to Barista Pro, Classic Evo Pro, La Specialista, and Silvia — what we’d buy at every rung of the mid-range.",
     readingTime: "11 min read",
     publishedAt: "2026-09-15",
     productSlugs: [
@@ -325,8 +325,8 @@ export const guides: Guide[] = [
     ],
     sections: [
       {
-        heading: "Under $1000 is where machines get serious",
-        body: "This band covers excellent home espresso if you allocate money correctly. The trap is spending $900 on an all-in-one and $0 on technique tools — or buying Silvia without a grinder budget. Decide: convenience chassis (Breville/De’Longhi all-in-ones) vs craft chassis (Gaggia/Silvia + separate grinder)."
+        heading: "The mid-range is where machines get serious",
+        body: "This band covers excellent home espresso if you allocate money correctly. The trap is spending everything on an all-in-one and nothing on technique tools — or buying Silvia without a grinder budget. Decide: convenience chassis (Breville/De’Longhi all-in-ones) vs craft chassis (Gaggia/Silvia + separate grinder)."
       },
       {
         heading: "Convenience rung",
@@ -420,7 +420,7 @@ export const guides: Guide[] = [
       "aeropress-original",
       "hario-v60-02",
       "chemex-classic-6-cup",
-      "timemore-chestnut-c3"
+      "timemore-chestnut-c2s"
     ],
     sections: [
       {
@@ -481,7 +481,7 @@ export const guides: Guide[] = [
     readingTime: "8 min read",
     publishedAt: "2026-09-19",
     productSlugs: [
-      "timemore-chestnut-c3",
+      "timemore-chestnut-c2s",
       "hario-skerton-pro",
       "comandante-c40",
       "hario-switch-02",

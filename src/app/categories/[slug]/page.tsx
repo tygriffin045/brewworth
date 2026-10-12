@@ -5,7 +5,7 @@ import { notFound } from "next/navigation";
 import { categories, getCategory } from "@/data/categories";
 import { getTopPicks } from "@/data/top10";
 import { getGuidesForCategory } from "@/data/guides";
-import { ProductCard } from "@/components/ProductCard";
+import { Top10List } from "@/components/Top10List";
 import { JsonLd } from "@/components/JsonLd";
 import { SITE_URL } from "@/lib/site";
 import { BadgePicks } from "@/components/BadgePicks";
@@ -14,13 +14,13 @@ type Props = { params: Promise<{ slug: string }> };
 
 const CATEGORY_INTRO: Record<string, string> = {
   "espresso-machines":
-    "Match heat-up speed, steam workflow, and portafilter size to your mornings — then pair with a real espresso grinder. Start with our under-$400 shortlist if you’re buying your first machine.",
+    "Match heat-up speed, steam workflow, and portafilter size to your mornings — then pair with a real espresso grinder. Start with our entry-level shortlist if you’re buying your first machine.",
   grinders:
     "Shot quality jumps more from a capable burr grinder than from most machine upgrades. We prioritize espresso-capable steps, consistency, and repairability over badge chasing.",
   "pour-over":
     "Clean filter cups that pair with any espresso bar — V60, Switch, Chemex, AeroPress, Kalita, and SCA-minded drip. Pick a ritual you’ll keep on weekdays.",
   "kettles-scales":
-    "Temperature control and 0.1g resolution remove guesswork from bloom, ratio, and dialing. Start affordable; upgrade when you’re logging shots daily.",
+    "A 0.1g scale removes guesswork from bloom, ratio, and dialing. Start affordable; upgrade when you’re logging shots daily.",
   "travel-espresso":
     "Manual levers and portable electrics for hotels, camping, and offices — real pressure without a full countertop setup. Pack light, brew intentionally.",
   "frothers-accessories":
@@ -46,10 +46,10 @@ const CATEGORY_SPOTLIGHT_GUIDES: Record<string, { href: string; label: string }[
     { href: "/guides/best-espresso-machine-with-built-in-grinder", label: "Best machines with a built-in grinder" },
   ],
   grinders: [
-    { href: "/guides/best-pour-over-grinder-under-200", label: "Best pour-over grinder under $200" },
+    { href: "/guides/best-pour-over-grinder-under-200", label: "Best budget pour-over grinder" },
   ],
   "pour-over": [
-    { href: "/guides/best-pour-over-grinder-under-200", label: "Best pour-over grinder under $200" },
+    { href: "/guides/best-pour-over-grinder-under-200", label: "Best budget pour-over grinder" },
   ],
 };
 
@@ -62,7 +62,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const category = getCategory(slug);
   if (!category) return { title: "Category not found" };
   const title = `${category.name} — BrewWorth picks`;
-  const description = `${category.description} Compare featured picks with clear verdicts and Amazon Associate links.`;
+  const description = `${category.description} Our Top 10 with pros, cons, and budget tiers.`;
   return {
     title: { absolute: title },
     description,
@@ -88,9 +88,6 @@ export default async function CategoryPage({ params }: Props) {
   if (!category) notFound();
 
   const items = getTopPicks(slug);
-  const featured = items.filter((p) => p.featured).slice(0, 3);
-  const featuredSlugs = new Set(featured.map((p) => p.slug));
-  const rest = items.filter((p) => !featuredSlugs.has(p.slug));
   const relatedGuides = getGuidesForCategory(
     slug,
     items.map((p) => p.slug),
@@ -161,36 +158,7 @@ export default async function CategoryPage({ params }: Props) {
       </div>
 
       <BadgePicks category={slug} />
-      {featured.length > 0 && (
-        <section className="mt-10">
-          <h2 className="font-serif text-2xl text-stone-900">Featured picks</h2>
-          <p className="mt-1 text-sm text-stone-600">
-            Start here if you want our strongest recommendations in this
-            category.
-          </p>
-          <div className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {featured.map((p, i) => (
-              <ProductCard
-                key={p.slug}
-                product={p}
-                priority={i === 0}
-                showAffiliateCta
-              />
-            ))}
-          </div>
-        </section>
-      )}
-
-      <section className="mt-12">
-        <h2 className="font-serif text-2xl text-stone-900">
-          {featured.length > 0 ? "All in this category" : "Picks"}
-        </h2>
-        <div className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {(featured.length > 0 ? rest : items).map((p) => (
-            <ProductCard key={p.slug} product={p} showAffiliateCta />
-          ))}
-        </div>
-      </section>
+      <Top10List items={items} heading={`Top ${items.length} ${category.name}`} />
 
       {relatedGuides.length > 0 && (
         <section className="mt-14">
