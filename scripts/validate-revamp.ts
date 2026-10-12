@@ -52,6 +52,20 @@ for (const c of categories) {
   if (v && top.some((p) => p.tier === "$") && v.tier !== "$") errors.push(`${c.slug}: Value ${v.slug} is ${v.tier} but the Top 10 has a $ item`);
   if (new Set(Object.values(pk)).size !== 3) errors.push(`${c.slug}: picks are not 3 distinct products`);
 }
+// Tier monotonicity vs internal price data (scripts/tier-prices.json, never rendered):
+// within a category, a cheaper product may never sit in a higher tier than a dearer one.
+{
+  // eslint-disable-next-line @typescript-eslint/no-require-imports
+  const tp = require("../../scripts/tier-prices.json").prices as Record<string, number | null>;
+  const RK: Record<string, number> = { $: 1, $$: 2, $$$: 3 };
+  for (const p of products) if (typeof tp[p.slug] !== "number") errors.push(`${p.slug}: no internal price in scripts/tier-prices.json`);
+  for (const c of categories) {
+    const list = products.filter((p) => p.category === c.slug && typeof tp[p.slug] === "number");
+    for (const a of list) for (const b of list)
+      if ((tp[a.slug] as number) < (tp[b.slug] as number) && RK[a.tier] > RK[b.tier])
+        errors.push(`${c.slug}: tier inversion: ${a.slug} (${a.tier}) is cheaper than ${b.slug} (${b.tier})`);
+  }
+}
 for (const w of warnings) console.warn(`validate-revamp: WARNING ${w}`);
 if (errors.length) {
   console.error(`validate-revamp: ${errors.length} error(s)\n` + errors.join("\n"));

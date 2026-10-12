@@ -602,7 +602,7 @@ export const products: Product[] = [
     category: "grinders",
     tagline: "Single-dose flat burr grinder for pour-over and filter coffee",
     summary: "The Ode Gen 2 is Fellow’s single-dose flat-burr brew grinder with anti-static improvements and 31 settings aimed at pour-over, drip, and cold brew — not espresso-fine. Pair it with a Stagg EKG and a V60 or Chemex when filter is your main game.",
-    tier: "$$$",
+    tier: "$$",
     imageGradient: "from-stone-900 via-orange-950 to-amber-950",
     imageAlt: "Fellow Ode Gen 2 brew grinder product photo",
     featured: false,
