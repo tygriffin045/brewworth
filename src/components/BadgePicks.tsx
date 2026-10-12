@@ -17,7 +17,7 @@ export function BadgePicks({ category }: { category: string }) {
   if (!picks) return null;
   const rows: { kind: keyof typeof BADGE; p: Product }[] = [
     { kind: "best", p: picks.best },
-    { kind: "premium", p: picks.premium },
+    ...(picks.premium ? [{ kind: "premium" as const, p: picks.premium }] : []),
     { kind: "value", p: picks.value },
   ];
   return (
@@ -27,12 +27,12 @@ export function BadgePicks({ category }: { category: string }) {
       data-badge-picks
     >
       <h2 id="badge-picks" className="font-serif text-2xl text-stone-900">
-        Our three picks
+        {rows.length === 3 ? "Our three picks" : "Our two picks"}
       </h2>
       <p className="mt-1 text-sm text-stone-600">
         Chosen from the Top 10 below. Budget tiers: $ budget · $$ mid-range · $$$ premium.
       </p>
-      <div className="mt-5 grid gap-5 sm:grid-cols-3">
+      <div className={`mt-5 grid gap-5 ${rows.length === 3 ? "sm:grid-cols-3" : "sm:grid-cols-2"}`}>
         {rows.map(({ kind, p }) => (
           <article
             key={kind}

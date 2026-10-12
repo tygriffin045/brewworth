@@ -39,14 +39,15 @@ export function getTopPicks(category: string): Product[] {
  * Editorial picks per category (revamp wave 1, Oct 12 2026). Best Overall is always #1 in TOP10;
  * Premium and Value must also appear in that category's Top 10 (checked by scripts/validate-revamp.ts).
  */
-export const PICKS: Record<string, { best: string; premium: string; value: string }> = {
+/** premium is optional: a category omits it when no product in its Top 10 is a genuine step up from Best Overall (brew cleaning). */
+export const PICKS: Record<string, { best: string; premium?: string; value: string }> = {
   "espresso-machines": { best: "breville-bambino", premium: "breville-barista-pro", value: "delonghi-dedica" },
   "grinders": { best: "baratza-encore-esp", premium: "eureka-mignon-specialita", value: "timemore-chestnut-c2s" },
   "pour-over": { best: "chemex-classic-6-cup", premium: "fellow-stagg-xf", value: "hario-v60-02" },
   "kettles-scales": { best: "maestri-espresso-scale", premium: "timemore-basic-2-coffee-scale", value: "etekcity-food-kitchen-scale" },
   "travel-espresso": { best: "flair-classic", premium: "flair-updated-49-pro-black-all", value: "wacaco-nanopresso" },
   "frothers-accessories": { best: "subminimal-nanofoamer", premium: "bodum-barista-frother", value: "zulay-kitchen-milk-frother-handheld-electric" },
-  "cleaning-maintenance": { best: "urnex-cafiza", premium: "jura-64308-cleaning-tablets-for-all", value: "breville-bec250-espresso-machine-cleaning-tablets" },
+  "cleaning-maintenance": { best: "urnex-cafiza", value: "breville-bec250-espresso-machine-cleaning-tablets" },
   "coffee-canisters": { best: "fellow-atmos", premium: "planetary-design-airscape-stainless-steel-coffee", value: "coffee-gator-coffee-canister" },
 };
 
@@ -54,8 +55,9 @@ export function getThreePicks(category: string) {
   const m = PICKS[category];
   if (!m) return null;
   const find = (s: string) => products.find((p) => p.slug === s);
-  const best = find(m.best), premium = find(m.premium), value = find(m.value);
-  if (!best || !premium || !value) return null;
+  const best = find(m.best), value = find(m.value);
+  const premium = m.premium ? find(m.premium) : undefined;
+  if (!best || !value || (m.premium && !premium)) return null;
   return { best, premium, value };
 }
 
