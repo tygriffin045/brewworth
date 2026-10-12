@@ -5,18 +5,19 @@ import { categories } from "@/data/categories";
 import { getFeaturedProducts } from "@/data/products";
 import { guides } from "@/data/guides";
 import { ProductCard } from "@/components/ProductCard";
-import { TopRail } from "@/components/TopRail";
+import { HomeTop10 } from "@/components/HomeTop10";
+import { getHomeTop10, HOME_TOP10_CATEGORIES } from "@/data/top10";
 
 export const metadata: Metadata = {
   title: {
     absolute: "BrewWorth — Honest picks for better home coffee",
   },
   description:
-    "Expert home espresso picks: best machines under $400, grinders, pour-over, and travel gear — with clear verdicts and Amazon Associate links.",
+    "Expert home espresso picks: best entry-level machines, grinders, pour-over, and travel gear — with clear verdicts and Amazon Associate links.",
   openGraph: {
     title: "BrewWorth — Honest picks for better home coffee",
     description:
-      "Expert home espresso picks: best machines under $400, grinders, pour-over, and travel gear — with clear verdicts and Amazon Associate links.",
+      "Expert home espresso picks: best entry-level machines, grinders, pour-over, and travel gear — with clear verdicts and Amazon Associate links.",
     url: "/",
     images: [DEFAULT_OG_IMAGE],
   },
@@ -24,7 +25,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "BrewWorth — Honest picks for better home coffee",
     description:
-      "Expert home espresso picks: best machines under $400, grinders, pour-over, and travel gear — with clear verdicts and Amazon Associate links.",
+      "Expert home espresso picks: best entry-level machines, grinders, pour-over, and travel gear — with clear verdicts and Amazon Associate links.",
     images: [DEFAULT_OG_IMAGE.url],
   },
   alternates: { canonical: "/" },
@@ -32,6 +33,11 @@ export const metadata: Metadata = {
 
 export default function HomePage() {
   const featured = getFeaturedProducts().slice(0, 6);
+  const top10 = getHomeTop10();
+  const top10Labels = HOME_TOP10_CATEGORIES.map((c) => ({
+    name: categories.find((x) => x.slug === c)?.name ?? c,
+    href: `/categories/${c}`,
+  }));
   const topGuides = [
     "best-espresso-machine-with-built-in-grinder",
     "breville-bambino-vs-bambino-plus",
@@ -45,6 +51,21 @@ export default function HomePage() {
 
   return (
     <div className="space-y-16">
+      <section>
+        <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#8b4513]">
+          BrewWorth Top 10
+        </p>
+        <h1 className="mt-2 font-serif text-4xl leading-tight text-[#2a1a12] sm:text-5xl">
+          The 10 coffee picks we&apos;d buy first
+        </h1>
+        <p className="mt-3 max-w-2xl text-[#4a3728]">
+          The Best Overall pick from each of our nine coffee categories, plus our
+          Premium espresso machine, with real pros and cons. Budget tiers: $ budget ·
+          $$ mid-range · $$$ premium.
+        </p>
+        <HomeTop10 items={top10} labels={top10Labels} />
+      </section>
+
       <section className="relative overflow-hidden rounded-3xl border border-amber-900/15 bg-[#ebe0d2] px-6 py-14 sm:px-12 sm:py-20">
         <div className="absolute -right-16 -top-16 h-64 w-64 rounded-full bg-[#8b4513]/20 blur-3xl" />
         <div className="absolute -bottom-20 left-1/3 h-56 w-56 rounded-full bg-[#3d2314]/15 blur-3xl" />
@@ -52,9 +73,9 @@ export default function HomePage() {
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#8b4513]">
             Home espresso gear, edited
           </p>
-          <h1 className="mt-3 font-serif text-4xl leading-tight text-[#2a1a12] sm:text-5xl">
+          <h2 className="mt-3 font-serif text-4xl leading-tight text-[#2a1a12] sm:text-5xl">
             Buy the right machine once — skip the upgrade regret
-          </h1>
+          </h2>
           <p className="mt-4 text-lg text-[#4a3728]">
             BrewWorth is an expert coffee niche guide: espresso machines,
             grinders, pour-over, and travel kits with clear verdicts and honest
@@ -65,7 +86,7 @@ export default function HomePage() {
               href="/guides/best-espresso-machines-under-400"
               className="inline-flex min-h-11 items-center rounded-full bg-[#3d2314] px-5 py-2.5 text-sm font-semibold text-[#f6efe6] hover:bg-[#2a1a12]"
             >
-              Best under $400
+              Best entry-level machines
             </Link>
             <Link
               href="/categories/espresso-machines"
@@ -82,8 +103,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
-      <TopRail />
 
       <section>
         <h2 className="font-serif text-3xl text-stone-900">Vs reviews</h2>

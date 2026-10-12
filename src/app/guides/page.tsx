@@ -6,11 +6,11 @@ import { guides } from "@/data/guides";
 export const metadata: Metadata = {
   title: "Buying guides — espresso, grinders & home setups",
   description:
-    "Practical BrewWorth guides for espresso machines under $400, grinders, pour-over, travel espresso, and complete home barista setups.",
+    "Practical BrewWorth guides for entry-level espresso machines, grinders, pour-over, travel espresso, and complete home barista setups.",
   openGraph: {
     title: "Buying guides — espresso, grinders & home setups",
     description:
-      "Practical BrewWorth guides for espresso machines under $400, grinders, pour-over, travel espresso, and complete home barista setups.",
+      "Practical BrewWorth guides for entry-level espresso machines, grinders, pour-over, travel espresso, and complete home barista setups.",
     url: "/guides",
     images: [DEFAULT_OG_IMAGE],
   },
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Buying guides — espresso, grinders & home setups",
     description:
-      "Practical BrewWorth guides for espresso machines under $400, grinders, pour-over, travel espresso, and complete home barista setups.",
+      "Practical BrewWorth guides for entry-level espresso machines, grinders, pour-over, travel espresso, and complete home barista setups.",
     images: [DEFAULT_OG_IMAGE.url],
   },
   alternates: { canonical: "/guides" },

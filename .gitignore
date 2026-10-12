@@ -55,3 +55,4 @@ tmp/
 scratch/
 .scratch/
 *.log
+.revamp-check

@@ -10,6 +10,7 @@ import {
 import { getCategory } from "@/data/categories";
 import { getGuidesForProduct } from "@/data/guides";
 import { AffiliateButton } from "@/components/AffiliateButton";
+import { TierBadge } from "@/components/TierBadge";
 import { ProductCard } from "@/components/ProductCard";
 import { JsonLd } from "@/components/JsonLd";
 import { SITE_URL } from "@/lib/site";
@@ -58,19 +59,6 @@ export default async function ProductPage({ params }: Props) {
   const related = getRelatedProducts(product);
   const relatedGuides = getGuidesForProduct(product.slug, 3);
   const productUrl = `${SITE_URL}/products/${product.slug}`;
-  const imageAbs = product.imageUrl
-    ? product.imageUrl.startsWith("http")
-      ? product.imageUrl
-      : `${SITE_URL}${product.imageUrl}`
-    : undefined;
-  const productLd = {
-    "@context": "https://schema.org",
-    "@type": "Product",
-    name: product.name,
-    description: product.summary,
-    brand: { "@type": "Brand", name: product.brand },
-    ...(imageAbs ? { image: [imageAbs] } : {}),
-  };
   const breadcrumbLd = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -109,7 +97,7 @@ export default async function ProductPage({ params }: Props) {
 
   return (
     <article>
-      <JsonLd data={[productLd, breadcrumbLd]} />
+      <JsonLd data={breadcrumbLd} />
       <nav className="text-sm text-stone-500" aria-label="Breadcrumb">
         <Link href="/products" className="hover:text-stone-800">
           Products
@@ -153,6 +141,9 @@ export default async function ProductPage({ params }: Props) {
         <div>
           <p className="text-xs uppercase tracking-wider text-stone-500">
             {product.brand} · {category?.name}
+          </p>
+          <p className="mt-2 text-sm text-stone-600">
+            Budget tier: <TierBadge tier={product.tier} />
           </p>
           <h1 className="mt-2 font-serif text-4xl text-stone-900">
             {product.name}
@@ -255,7 +246,6 @@ export default async function ProductPage({ params }: Props) {
           productName={product.name}
           amazonAsin={product.amazonAsin}
           amazonQuery={product.amazonQuery}
-          label="Check price on Amazon"
           className="[&_a]:min-h-11 [&_a]:w-full [&_a]:py-3 [&_a]:text-center"
         />
       </div>

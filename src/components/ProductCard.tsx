@@ -67,7 +67,6 @@ export function ProductCard({
             productName={product.name}
             amazonAsin={product.amazonAsin}
             amazonQuery={product.amazonQuery}
-            label="Check price on Amazon"
             className="[&_a]:min-h-11 [&_a]:w-full [&_a]:py-3 [&_a]:text-center [&_a]:text-sm"
           />
         </div>

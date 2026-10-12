@@ -8,14 +8,14 @@ import type { Guide } from "./types";
 export const buyerIntentGuides: Guide[] = [
   {
     slug: "best-pour-over-grinder-under-200",
-    title: "Best Pour-Over Grinder Under $200 (2026)",
-    metaTitle: "Best Pour-Over Grinder Under $200 (2026 Picks)",
+    title: "Best Budget Pour-Over Grinder (2026)",
+    metaTitle: "Best Budget Pour-Over Grinder (2026 Picks)",
     metaDescription:
-      "The best burr grinders for pour-over under $200: Baratza Encore ESP, Fellow Opus, Capresso Infinity Plus, and TIMEMORE C2S — honest pros, cons, and who each suits.",
+      "The best budget burr grinders for pour-over: Baratza Encore ESP, Fellow Opus, Capresso Infinity Plus, and TIMEMORE C2S — honest pros, cons, and who each suits.",
     description:
-      "Encore ESP vs Fellow Opus vs Capresso Infinity Plus vs TIMEMORE C2S — the burr grinders that make V60, Chemex, and Kalita cups taste clean without a $300+ spend.",
+      "Encore ESP vs Fellow Opus vs Capresso Infinity Plus vs TIMEMORE C2S — the burr grinders that make V60, Chemex, and Kalita cups taste clean without a premium grinder budget.",
     intro:
-      "For pour-over, the grinder decides more of the cup than the dripper, the kettle, or the filter paper. Under $200 you can get genuinely good burrs — you just have to pick the trade-off you can live with: repairability, looks, price, or elbow grease.",
+      "For pour-over, the grinder decides more of the cup than the dripper, the kettle, or the filter paper. On a budget you can get genuinely good burrs — you just have to pick the trade-off you can live with: repairability, looks, price, or elbow grease.",
     readingTime: "9 min read",
     publishedAt: "2026-09-27",
     productSlugs: [
@@ -146,7 +146,7 @@ export const buyerIntentGuides: Guide[] = [
     ],
     faqs: [
       {
-        question: "What is the best pour-over grinder under $200?",
+        question: "What is the best budget pour-over grinder?",
         answer:
           "For most people, the Baratza Encore ESP. It has 40mm steel conical burrs, a macro-step range built for filter brewing, a quick-release burr for cleaning, and Baratza’s parts support. The Fellow Opus is the stylish alternative, and the TIMEMORE C2S hand grinder is the best-value manual option.",
       },
@@ -302,7 +302,7 @@ export const buyerIntentGuides: Guide[] = [
     ],
     seeAlso: [
       { href: "/guides/best-espresso-machine-with-built-in-grinder", label: "Best Espresso Machine With Built-In Grinder" },
-      { href: "/guides/best-espresso-machines-under-400", label: "Best Espresso Machines Under $400" },
+      { href: "/guides/best-espresso-machines-under-400", label: "Best Entry-Level Espresso Machines" },
       { href: "/guides/breville-vs-gaggia-vs-delonghi", label: "Breville vs Gaggia vs De’Longhi" },
       { href: "/guides/best-milk-frothers-latte-art", label: "Best Milk Frothers for Latte Art" },
       { href: "/compare", label: "Compare espresso machines side by side" },
@@ -463,12 +463,12 @@ export const buyerIntentGuides: Guide[] = [
       },
       {
         heading: "When to skip the all-in-one",
-        body: "If you already own a good grinder, or you expect espresso to become a hobby, skip the built-in grinder. A standalone machine like the Bambino or Gaggia Classic Evo Pro with a separate espresso grinder costs about the same as a mid-range all-in-one and gives you more room to upgrade. Our Bambino vs Bambino Plus and under-$1000 guides cover that path.",
+        body: "If you already own a good grinder, or you expect espresso to become a hobby, skip the built-in grinder. A standalone machine like the Bambino or Gaggia Classic Evo Pro with a separate espresso grinder costs about the same as a mid-range all-in-one and gives you more room to upgrade. Our Bambino vs Bambino Plus and mid-range machine guides cover that path.",
       },
     ],
     seeAlso: [
       { href: "/guides/breville-bambino-vs-bambino-plus", label: "Breville Bambino vs Bambino Plus" },
-      { href: "/guides/best-espresso-machines-under-1000", label: "Best Espresso Machines Under $1000" },
+      { href: "/guides/best-espresso-machines-under-1000", label: "Best Mid-Range Espresso Machines" },
       { href: "/guides/best-espresso-grinders", label: "Best Espresso Grinders" },
       { href: "/guides/cleaning-maintenance-essentials", label: "Espresso Cleaning & Maintenance Essentials" },
       { href: "/compare", label: "Compare espresso machines side by side" },

@@ -146,7 +146,6 @@ export default async function GuidePage({ params }: Props) {
                   productName={p.name}
                   amazonAsin={p.amazonAsin}
                   amazonQuery={p.amazonQuery}
-                  label="Check price"
                   className="shrink-0 [&_a]:min-h-11 [&_a]:py-2.5 [&_a]:text-xs"
                 />
               </li>
@@ -184,7 +183,6 @@ export default async function GuidePage({ params }: Props) {
                   productName={p.name}
                   amazonAsin={p.amazonAsin}
                   amazonQuery={p.amazonQuery}
-                  label="Check price"
                   className="mt-3 [&_a]:min-h-11 [&_a]:w-full [&_a]:py-2.5 [&_a]:text-center [&_a]:text-xs"
                 />
               </div>
@@ -260,7 +258,6 @@ export default async function GuidePage({ params }: Props) {
                     productName={p.name}
                     amazonAsin={p.amazonAsin}
                     amazonQuery={p.amazonQuery}
-                    label="Check price on Amazon"
                   />
                   <Link
                     href={`/products/${p.slug}`}
