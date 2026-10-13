@@ -100,6 +100,12 @@ export default function HomePage() {
             >
               Top buying guides
             </Link>
+            <Link
+              href="/guides/gifts-for-coffee-lovers"
+              className="inline-flex min-h-11 items-center rounded-full border border-[#9a3f12]/50 px-5 py-2.5 text-sm font-semibold text-[#9a3f12] hover:bg-white/50"
+            >
+              Gifts for coffee lovers
+            </Link>
           </div>
         </div>
       </section>

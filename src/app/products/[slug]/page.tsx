@@ -10,6 +10,7 @@ import {
 import { getCategory } from "@/data/categories";
 import { getGuidesForProduct } from "@/data/guides";
 import { AffiliateButton } from "@/components/AffiliateButton";
+import { StickyAffiliateBar } from "@/components/StickyAffiliateBar";
 import { TierBadge } from "@/components/TierBadge";
 import { ProductCard } from "@/components/ProductCard";
 import { JsonLd } from "@/components/JsonLd";
@@ -239,17 +240,13 @@ export default async function ProductPage({ params }: Props) {
         </section>
       )}
 
-      {/* Mobile sticky CTA — uses existing AffiliateButton (Optim-owned) */}
-      <div className="fixed inset-x-0 bottom-0 z-40 border-t border-amber-900/15 bg-[#f6efe6]/95 p-3 backdrop-blur md:hidden">
-        <AffiliateButton
-          productSlug={product.slug}
-          productName={product.name}
-          amazonAsin={product.amazonAsin}
-          amazonQuery={product.amazonQuery}
-          className="[&_a]:min-h-11 [&_a]:w-full [&_a]:py-3 [&_a]:text-center"
-        />
-      </div>
-      <div className="h-20 md:hidden" aria-hidden />
+      <StickyAffiliateBar
+        productSlug={product.slug}
+        productName={product.name}
+        amazonAsin={product.amazonAsin}
+        amazonQuery={product.amazonQuery}
+        placement="product_sticky"
+      />
     </article>
   );
 }

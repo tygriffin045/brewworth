@@ -3,7 +3,9 @@ import { DEFAULT_OG_IMAGE } from "@/lib/site";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { categories, getCategory } from "@/data/categories";
-import { getTopPicks } from "@/data/top10";
+import { getTopPicks, getThreePicks } from "@/data/top10";
+import { AffiliateButton } from "@/components/AffiliateButton";
+import { StickyAffiliateBar } from "@/components/StickyAffiliateBar";
 import { getGuidesForCategory } from "@/data/guides";
 import { Top10List } from "@/components/Top10List";
 import { JsonLd } from "@/components/JsonLd";
@@ -41,6 +43,9 @@ const CATEGORY_GUIDE_LINKS: Record<string, string> = {
 
 /** Extra high-intent guides surfaced on specific category pages. */
 const CATEGORY_SPOTLIGHT_GUIDES: Record<string, { href: string; label: string }[]> = {
+  "kettles-scales": [{ href: "/guides/gifts-for-coffee-lovers", label: "Gifts for coffee lovers" }],
+  "coffee-canisters": [{ href: "/guides/gifts-for-coffee-lovers", label: "Gifts for coffee lovers" }],
+  "frothers-accessories": [{ href: "/guides/gifts-for-coffee-lovers", label: "Gifts for coffee lovers" }],
   "espresso-machines": [
     { href: "/guides/breville-bambino-vs-bambino-plus", label: "Bambino vs Bambino Plus" },
     { href: "/guides/best-espresso-machine-with-built-in-grinder", label: "Best machines with a built-in grinder" },
@@ -49,6 +54,7 @@ const CATEGORY_SPOTLIGHT_GUIDES: Record<string, { href: string; label: string }[
     { href: "/guides/best-pour-over-grinder-under-200", label: "Best budget pour-over grinder" },
   ],
   "pour-over": [
+    { href: "/guides/gifts-for-coffee-lovers", label: "Gifts for coffee lovers" },
     { href: "/guides/best-pour-over-grinder-under-200", label: "Best budget pour-over grinder" },
   ],
 };
@@ -94,6 +100,7 @@ export default async function CategoryPage({ params }: Props) {
     3,
   );
   const intro = CATEGORY_INTRO[slug] ?? category.description;
+  const lead = getThreePicks(slug)?.best ?? items[0];
   const primaryGuide = CATEGORY_GUIDE_LINKS[slug];
   const catUrl = `${SITE_URL}/categories/${slug}`;
   const breadcrumbLd = {
@@ -125,6 +132,27 @@ export default async function CategoryPage({ params }: Props) {
         {category.name}
       </h1>
       <p className="mt-3 max-w-2xl text-stone-600">{intro}</p>
+      {lead && (
+        <div
+          className="mt-5 flex flex-col gap-3 rounded-2xl border-2 border-[#9a3f12]/25 bg-white p-4 sm:flex-row sm:items-center sm:justify-between"
+          data-top-cta
+        >
+          <p className="text-sm text-stone-700">
+            <span className="font-bold uppercase tracking-wide text-[#9a3f12]">Best Overall:</span>{" "}
+            <Link href={`/products/${lead.slug}`} className="font-semibold text-stone-900 underline underline-offset-2">
+              {lead.name}
+            </Link>
+          </p>
+          <AffiliateButton
+            productSlug={lead.slug}
+            productName={lead.name}
+            amazonAsin={lead.amazonAsin}
+            amazonQuery={lead.amazonQuery}
+            placement="category_top"
+            className="shrink-0"
+          />
+        </div>
+      )}
       <div className="mt-4 flex flex-wrap items-center gap-3 text-sm text-stone-500">
         <Link href="/products" className="underline underline-offset-2">
           All products
@@ -159,6 +187,16 @@ export default async function CategoryPage({ params }: Props) {
 
       <BadgePicks category={slug} />
       <Top10List items={items} heading={`Top ${items.length} ${category.name}`} />
+      {lead && (
+        <StickyAffiliateBar
+          productSlug={lead.slug}
+          productName={lead.name}
+          amazonAsin={lead.amazonAsin}
+          amazonQuery={lead.amazonQuery}
+          label="Best Overall"
+          placement="category_sticky"
+        />
+      )}
 
       {relatedGuides.length > 0 && (
         <section className="mt-14">

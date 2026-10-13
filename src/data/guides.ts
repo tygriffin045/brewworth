@@ -4,6 +4,122 @@ import { buyerIntentGuides } from "./guides-buyer-intent";
 export const guides: Guide[] = [
   ...buyerIntentGuides,
   {
+    slug: "gifts-for-coffee-lovers",
+    title: "Gifts for Coffee Lovers: Brewing Gear Picks by Budget Tier",
+    metaTitle: "Gifts for Coffee Lovers (2026 Holiday Guide)",
+    metaDescription:
+      "Holiday gift ideas for coffee lovers: gooseneck kettles, burr grinders, pour-over drippers, canisters, scales and travel espresso, sorted by $, $$ and $$$ budget tier.",
+    description:
+      "Coffee gear that tends to get used every morning, from budget-friendly drippers and scales to grinders and kettles. Every pick comes from the BrewWorth Top 10 lists.",
+    intro:
+      "The best coffee gift usually fills a gap in someone's routine rather than replacing gear they already like. If you're not sure what they own, a kettle, a scale, or a canister is less likely to clash with an existing setup than a machine or grinder.",
+    readingTime: "6 min read",
+    publishedAt: "2026-10-13",
+    productSlugs: [
+      "cosori-gooseneck-electric-kettle-with-temperature",
+      "baratza-encore-esp",
+      "fellow-atmos",
+      "chemex-classic-6-cup",
+      "subminimal-nanofoamer",
+      "hario-v60-02",
+      "wacaco-nanopresso",
+      "etekcity-food-kitchen-scale",
+    ],
+    picks: [
+      {
+        productSlug: "cosori-gooseneck-electric-kettle-with-temperature",
+        label: "Best overall gift ($$)",
+        verdict:
+          "A temperature-control gooseneck kettle is likely to be useful for pour-over and tea alike. The Cosori offers five presets and a hold function that keeps water warm for up to an hour, per the listing details. Its 0.8 L capacity may feel small for people who brew for a crowd.",
+        pros: ["Five temperature presets", "Keeps water warm for up to 1 hour", "Gooseneck spout for controlled pouring"],
+        cons: ["0.8 L capacity limits large batches", "Presets only, no single-degree setting listed"],
+        bestFor: "Pour-over and tea drinkers who heat water on the stove today.",
+      },
+      {
+        productSlug: "baratza-encore-esp",
+        label: "Best grinder gift ($$)",
+        verdict:
+          "A burr grinder is often the upgrade that changes the cup most. The Baratza Encore ESP handles drip and espresso grinds and has strong repair support. Check first that the recipient doesn't already own a grinder they like.",
+        pros: ["Covers drip and espresso grinds", "Repairable design with parts support", "Costs far less than premium espresso grinders"],
+        cons: ["Louder than high-end grinders", "Stepped adjustment, not stepless"],
+        bestFor: "Someone still buying pre-ground coffee or using a blade grinder.",
+      },
+      {
+        productSlug: "fellow-atmos",
+        label: "Best small-upgrade gift ($$)",
+        verdict:
+          "The Fellow Atmos vacuum canister removes air with a twist of the lid, which may help beans stay fresher into the second week. It is a safe gift because it works with any brewing method, though the 0.4 L size holds only about 6 oz of beans.",
+        pros: ["Twist lid removes air after each opening", "Indicator shows when the seal is holding", "Works with any brew method"],
+        cons: ["Too small for a full 12 oz bag", "Twisting the lid adds a step"],
+        bestFor: "People who buy whole-bean coffee in small bags.",
+      },
+      {
+        productSlug: "chemex-classic-6-cup",
+        label: "Best-looking gift ($$)",
+        verdict:
+          "The Chemex is a classic hourglass brewer that doubles as a serving carafe. It tends to make a clean, low-sediment cup. The proprietary filters are an ongoing cost, so a pack of filters may be worth adding.",
+        pros: ["Clean, low-sediment cup", "Doubles as a serving carafe", "Long-lasting classic design"],
+        cons: ["Proprietary filters are a recurring cost", "Glass is fragile"],
+        bestFor: "Weekend brewers who make coffee for two or more.",
+      },
+      {
+        productSlug: "subminimal-nanofoamer",
+        label: "Best gift for latte drinkers ($$)",
+        verdict:
+          "The NanoFoamer is a handheld frother aimed at microfoam. It may suit someone whose espresso machine has a weak steam wand, or who makes milk drinks without a machine. It is not a full replacement for a strong steam wand.",
+        pros: ["Microfoam without a steam wand", "Compact and travel-friendly"],
+        cons: ["Not a full replacement for a strong steam wand", "Technique still matters"],
+        bestFor: "Latte drinkers with a pod or entry espresso machine.",
+      },
+      {
+        productSlug: "hario-v60-02",
+        label: "Budget-friendly pour-over starter ($)",
+        verdict:
+          "The Hario V60 is a low-cost way into pour-over with a large recipe community. It works best with a kettle and a scale, so it pairs well with the Cosori kettle or Etekcity scale in this guide.",
+        pros: ["Low-cost entry into pour-over", "Lots of control over a single cup", "Ceramic holds heat well"],
+        cons: ["More technique-sensitive than immersion brewers", "Needs a kettle, filters and ideally a scale"],
+        bestFor: "Curious beginners and stocking stuffers.",
+      },
+      {
+        productSlug: "wacaco-nanopresso",
+        label: "Budget-friendly travel gift ($)",
+        verdict:
+          "The Nanopresso is a hand-pumped portable espresso maker that needs no batteries. It may suit travelers and campers who want something closer to espresso than instant. Manual pumping takes some effort.",
+        pros: ["Battery-free and portable", "Packs easily for travel"],
+        cons: ["Manual pumping takes effort", "Still needs finely ground coffee"],
+        bestFor: "Travelers, campers and office coffee drinkers.",
+      },
+      {
+        productSlug: "etekcity-food-kitchen-scale",
+        label: "Budget-friendly scale ($)",
+        verdict:
+          "A scale tends to make pour-over more consistent. The Etekcity weighs in 1 g steps with a tare button, which is generally fine for pour-over but coarse for espresso.",
+        pros: ["1 g steps up to 11 lb", "Tare plus five units", "Wipe-clean stainless top"],
+        cons: ["Coarse for espresso doses", "No built-in brew timer"],
+        bestFor: "Pour-over beginners and as a pairing with the V60.",
+      },
+    ],
+    sections: [
+      {
+        heading: "Easy pairings",
+        body: "A V60 with a scale, or a canister with a bag of local beans, can make a well-rounded gift without guessing at someone's setup. Grinders and machines are more personal, so they may be better gifts when you already know what the person uses.",
+      },
+      {
+        heading: "About budget tiers",
+        body: "Each pick shows a $, $$ or $$$ tier instead of a price. Holiday prices move often, so check the current price on Amazon before buying.",
+      },
+    ],
+    faqs: [
+      { question: "What is a good gift for someone who already has a coffee maker?", answer: "Accessories such as a vacuum canister, a scale or a gooseneck kettle tend to work alongside most setups without replacing gear the person already likes." },
+      { question: "Are there budget-friendly coffee gifts?", answer: "Yes. The Hario V60, Wacaco Nanopresso and Etekcity scale sit in the $ tier. Prices change often, so check Amazon for the current price." },
+    ],
+    seeAlso: [
+      { href: "/categories/kettles-scales", label: "Top 10 kettles and scales" },
+      { href: "/categories/pour-over", label: "Top 10 pour-over brewers" },
+      { href: "/categories/grinders", label: "Top 10 grinders" },
+    ],
+  },
+  {
     slug: "best-espresso-machines-under-400",
     title: "Best Entry-Level Espresso Machines for Beginners",
     description: "What actually matters in an entry-level machine — heat-up time, steam, portafilter size, and why the grinder matters more than the badge on the machine.",
