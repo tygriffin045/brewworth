@@ -48,7 +48,7 @@ export const guides: Guide[] = [
         productSlug: "fellow-atmos",
         label: "Best small-upgrade gift ($$)",
         verdict:
-          "The Fellow Atmos vacuum canister removes air with a twist of the lid, which may help beans stay fresher into the second week. It is a safe gift because it works with any brewing method, though the 0.4 L size holds only about 6 oz of beans.",
+          "The Fellow Atmos vacuum canister removes air with a twist of the lid, which may help beans stay fresher into the second week. It is an easy gift because it works with any brewing method, though the 0.4 L size holds only about 6 oz of beans.",
         pros: ["Twist lid removes air after each opening", "Indicator shows when the seal is holding", "Works with any brew method"],
         cons: ["Too small for a full 12 oz bag", "Twisting the lid adds a step"],
         bestFor: "People who buy whole-bean coffee in small bags.",
