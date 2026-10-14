@@ -7,6 +7,7 @@ import { getGuide, getRelatedGuides, guides } from "@/data/guides";
 import { getProduct } from "@/data/products";
 import { ProductCard } from "@/components/ProductCard";
 import { AffiliateButton } from "@/components/AffiliateButton";
+import { StickyAffiliateBar } from "@/components/StickyAffiliateBar";
 import { JsonLd } from "@/components/JsonLd";
 import { SITE_URL, SITE_NAME } from "@/lib/site";
 
@@ -146,7 +147,8 @@ export default async function GuidePage({ params }: Props) {
                   productName={p.name}
                   amazonAsin={p.amazonAsin}
                   amazonQuery={p.amazonQuery}
-                  className="shrink-0 [&_a]:min-h-11 [&_a]:py-2.5 [&_a]:text-xs"
+                  placement="guide_quick_picks"
+                  className="shrink-0"
                 />
               </li>
             ))}
@@ -271,6 +273,22 @@ export default async function GuidePage({ params }: Props) {
           </div>
         </section>
       )}
+
+      {(() => {
+        const lead = picks[0]?.product ?? topPicks[0];
+        if (!lead) return null;
+        return (
+          <StickyAffiliateBar
+            productSlug={lead.slug}
+            productName={lead.name}
+            amazonAsin={lead.amazonAsin}
+            amazonQuery={lead.amazonQuery}
+            label={picks[0]?.pick.label ?? "Top pick in this guide"}
+            placement="guide_sticky"
+            showAfterId="quick-picks"
+          />
+        );
+      })()}
 
       {guide.criteria && (
         <section className="mt-12">

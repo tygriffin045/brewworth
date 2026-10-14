@@ -1,6 +1,7 @@
 // Revamp content gate (run in `npm run build`). Fails on: Top 10 size != 10, missing/invalid picks,
 // missing tier, pros outside 2-4, cons outside 1-3, Top 10 slugs that don't exist.
 import { products } from "../src/data/products";
+import { guides as _gg } from "../src/data/guides";
 import { categories } from "../src/data/categories";
 import { TOP10, PICKS, getTopPicks } from "../src/data/top10";
 
@@ -67,6 +68,20 @@ for (const c of categories) {
     for (const a of list) for (const b of list)
       if ((tp[a.slug] as number) < (tp[b.slug] as number) && RK[a.tier] > RK[b.tier])
         errors.push(`${c.slug}: tier inversion: ${a.slug} (${a.tier}) is cheaper than ${b.slug} (${b.tier})`);
+  }
+}
+// Gift-guide copy gate: picks must exist, no seller voice, no "under $N" phrasing, hedged (no absolute claims).
+{
+  for (const g of _gg as unknown as { slug: string; title: string; description: string; picks?: { productSlug: string; verdict: string; quickNote?: string; pros: string[]; cons: string[]; bestFor: string }[]; sections: { body: string }[]; faqs?: { answer: string }[] }[]) {
+    if (!g.slug.startsWith("gifts-")) continue;
+    const _slugs = new Set(products.map((p: { slug: string }) => p.slug));
+    for (const pk of g.picks ?? []) if (!_slugs.has(pk.productSlug)) errors.push(`guide ${g.slug}: pick not found ${pk.productSlug}`);
+    const texts = [g.title, g.description, ...g.sections.map((s) => s.body), ...(g.faqs ?? []).map((f) => f.answer), ...(g.picks ?? []).flatMap((p) => [p.verdict, p.quickNote ?? "", p.bestFor, ...p.pros, ...p.cons])];
+    for (const t of texts) {
+      const m = t.match(/\b(you'll love|effortlessly|say goodbye|maximize|guaranteed|the best ever|perfect for everyone|must-have)\b/i);
+      if (m) errors.push(`guide ${g.slug}: seller voice / unhedged "${m[0]}": ${t.slice(0, 60)}`);
+      if (/under\s*\$|\$\s*\d/i.test(t)) errors.push(`guide ${g.slug}: price phrasing: ${t.slice(0, 60)}`);
+    }
   }
 }
 for (const w of warnings) console.warn(`validate-revamp: WARNING ${w}`);
