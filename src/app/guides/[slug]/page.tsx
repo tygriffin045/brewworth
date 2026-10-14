@@ -285,6 +285,7 @@ export default async function GuidePage({ params }: Props) {
             amazonQuery={lead.amazonQuery}
             label={picks[0]?.pick.label ?? "Top pick in this guide"}
             placement="guide_sticky"
+            showAfterId="quick-picks"
           />
         );
       })()}
