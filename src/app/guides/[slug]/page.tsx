@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { DEFAULT_OG_IMAGE } from "@/lib/site";
 import Image from "next/image";
 import Link from "next/link";
+import { getGuideTop10 } from "@/lib/guide-links";
 import { notFound } from "next/navigation";
 import { getGuide, getRelatedGuides, guides } from "@/data/guides";
 import { getProduct } from "@/data/products";
@@ -53,6 +54,7 @@ export default async function GuidePage({ params }: Props) {
     .filter((p): p is NonNullable<typeof p> => Boolean(p));
   const topPicks = linkedProducts.slice(0, 3);
   const relatedGuides = getRelatedGuides(guide.slug, 3);
+  const top10 = getGuideTop10(guide);
   const guideUrl = `${SITE_URL}/guides/${guide.slug}`;
   const articleLd = {
     "@context": "https://schema.org",
@@ -379,6 +381,16 @@ export default async function GuidePage({ params }: Props) {
                 <p className="mt-0.5 text-sm text-stone-600">{g.description}</p>
               </li>
             ))}
+            {top10 && (
+              <li>
+                <Link
+                  href={top10.href}
+                  className="font-medium text-[#6b3410] underline underline-offset-4"
+                >
+                  {top10.label}
+                </Link>
+              </li>
+            )}
           </ul>
         </section>
       )}
