@@ -1,3 +1,5 @@
+import { fit } from "@/lib/meta-fit";
+import { ItemListLd } from "@/components/SeoLd";
 import type { Metadata } from "next";
 import { DEFAULT_OG_IMAGE } from "@/lib/site";
 import Image from "next/image";
@@ -22,8 +24,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const guide = getGuide(slug);
   if (!guide) return { title: "Guide not found" };
-  const title = guide.metaTitle ?? guide.title;
-  const description = guide.metaDescription ?? guide.description;
+  const title = fit(guide.metaTitle ?? guide.title, 58);
+  const description = fit(guide.metaDescription ?? guide.description, 160);
   return {
     title,
     description,
@@ -104,6 +106,7 @@ export default async function GuidePage({ params }: Props) {
 
   return (
     <article className="max-w-3xl">
+      <ItemListLd name={guide.title} items={guide.productSlugs.flatMap((s) => { const p = getProduct(s); return p ? [{ name: p.name, path: `/products/${p.slug}` }] : []; })} />
       <JsonLd
         data={faqLd ? [articleLd, breadcrumbLd, faqLd] : [articleLd, breadcrumbLd]}
       />

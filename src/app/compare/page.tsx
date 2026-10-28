@@ -1,3 +1,4 @@
+import { BreadcrumbLd } from "@/components/SeoLd";
 import type { Metadata } from "next";
 import { DEFAULT_OG_IMAGE } from "@/lib/site";
 import Link from "next/link";
@@ -12,6 +13,7 @@ export const metadata: Metadata = {
   description:
     "Side-by-side comparison of three BrewWorth espresso machines across budget, mid-range, and convenience.",
   openGraph: {
+      type: "website",
     title: "Espresso machine comparison",
     description:
       "Side-by-side comparison of three BrewWorth espresso machines across budget, mid-range, and convenience.",
@@ -87,6 +89,7 @@ export default function ComparePage() {
 
   return (
     <div>
+      <BreadcrumbLd trail={[["Compare", "/compare"]]} />
       <h1 className="font-serif text-4xl text-stone-900">
         Espresso machine comparison
       </h1>

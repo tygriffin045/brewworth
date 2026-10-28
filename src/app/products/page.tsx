@@ -1,3 +1,4 @@
+import { BreadcrumbLd } from "@/components/SeoLd";
 import type { Metadata } from "next";
 import { DEFAULT_OG_IMAGE } from "@/lib/site";
 import { products } from "@/data/products";
@@ -8,6 +9,7 @@ export const metadata: Metadata = {
   description:
     "Browse BrewWorth home coffee picks: espresso machines, grinders, pour-over, travel, and accessories. Filter by category and budget with clear verdicts.",
   openGraph: {
+      type: "website",
     title: "All products — espresso machines, grinders & more",
     description:
       "Browse BrewWorth home coffee picks: espresso machines, grinders, pour-over, travel, and accessories. Filter by category and budget with clear verdicts.",
@@ -27,6 +29,7 @@ export const metadata: Metadata = {
 export default function ProductsIndexPage() {
   return (
     <div>
+      <BreadcrumbLd trail={[["Products", "/products"]]} />
       <h1 className="font-serif text-4xl text-stone-900">All products</h1>
       <p className="mt-2 max-w-2xl text-stone-600">
         Filter by category and budget band. Every product page includes pros,

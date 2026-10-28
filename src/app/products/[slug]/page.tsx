@@ -1,3 +1,5 @@
+import { DEFAULT_OG_IMAGE } from "@/lib/site";
+import { fit } from "@/lib/meta-fit";
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -26,7 +28,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const product = getProduct(slug);
   if (!product) return { title: "Product not found" };
-  const title = `${product.name} review — ${product.tagline}`;
+  const title = fit(`${product.name} review — ${product.tagline}`, 55);
   const description =
     product.summary.length > 155
       ? `${product.summary.slice(0, 152)}…`
@@ -35,12 +37,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title,
     description,
     openGraph: {
+      type: "website",
       title: product.name,
       description,
       url: `/products/${slug}`,
       ...(product.imageUrl
         ? { images: [{ url: product.imageUrl, alt: product.imageAlt }] }
-        : {}),
+        : { images: [DEFAULT_OG_IMAGE] }),
     },
     twitter: {
       card: "summary_large_image",

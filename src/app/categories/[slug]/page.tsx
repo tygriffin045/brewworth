@@ -1,3 +1,5 @@
+import { fit } from "@/lib/meta-fit";
+import { ItemListLd } from "@/components/SeoLd";
 import type { Metadata } from "next";
 import { DEFAULT_OG_IMAGE } from "@/lib/site";
 import Link from "next/link";
@@ -68,11 +70,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const category = getCategory(slug);
   if (!category) return { title: "Category not found" };
   const title = `${category.name} — BrewWorth picks`;
-  const description = `${category.description} Our Top 10 with pros, cons, and budget tiers.`;
+  const description = fit(`${category.description} Our Top 10 with pros, cons, and budget tiers.`, 160);
   return {
     title: { absolute: title },
     description,
     openGraph: {
+      type: "website",
       title,
       description,
       url: `/categories/${slug}`,
@@ -124,6 +127,7 @@ export default async function CategoryPage({ params }: Props) {
 
   return (
     <div>
+      <ItemListLd name={`Top ${items.length} ${category.name}`} items={items.map((p) => ({ name: p.name, path: `/products/${p.slug}` }))} />
       <JsonLd data={breadcrumbLd} />
       <p className="text-xs font-semibold uppercase tracking-wider text-stone-500">
         Category

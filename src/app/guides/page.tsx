@@ -1,3 +1,4 @@
+import { BreadcrumbLd } from "@/components/SeoLd";
 import type { Metadata } from "next";
 import { DEFAULT_OG_IMAGE } from "@/lib/site";
 import Link from "next/link";
@@ -8,6 +9,7 @@ export const metadata: Metadata = {
   description:
     "Practical BrewWorth guides for entry-level espresso machines, grinders, pour-over, travel espresso, and complete home barista setups.",
   openGraph: {
+      type: "website",
     title: "Buying guides — espresso, grinders & home setups",
     description:
       "Practical BrewWorth guides for entry-level espresso machines, grinders, pour-over, travel espresso, and complete home barista setups.",
@@ -27,6 +29,7 @@ export const metadata: Metadata = {
 export default function GuidesIndexPage() {
   return (
     <div>
+      <BreadcrumbLd trail={[["Guides", "/guides"]]} />
       <h1 className="font-serif text-4xl text-stone-900">Buying guides</h1>
       <p className="mt-2 max-w-2xl text-stone-600">
         Longer editorial pieces with links to the products we mention — written

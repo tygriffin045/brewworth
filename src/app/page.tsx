@@ -15,6 +15,7 @@ export const metadata: Metadata = {
   description:
     "Expert home espresso picks: best entry-level machines, grinders, pour-over, and travel gear — with clear verdicts and Amazon Associate links.",
   openGraph: {
+      type: "website",
     title: "BrewWorth — Honest picks for better home coffee",
     description:
       "Expert home espresso picks: best entry-level machines, grinders, pour-over, and travel gear — with clear verdicts and Amazon Associate links.",
