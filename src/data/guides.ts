@@ -784,6 +784,92 @@ export const guides: Guide[] = [
     ],
   },
 
+  {
+    slug: "best-milk-frothing-pitchers",
+    title: "Best Milk Frothing Pitchers for Espresso at Home",
+    metaTitle: "Best Milk Frothing Pitchers (2026)",
+    metaDescription:
+      "Rattleware 12oz vs HOOMIL 12oz and 20oz vs Adorever: which stainless steaming pitcher fits single drinks, two drinks and latte art practice.",
+    description:
+      "A steaming pitcher is the cheapest upgrade for milk drinks. Here are four stainless pitchers from our verified Top 10, sorted by the size and drinks they suit.",
+    intro:
+      "Pitcher size decides how well you can texture milk: too big and a single drink gets lost, too small and a second cup is a second round. Pick by size first, spout and extras second.",
+    readingTime: "5 min read",
+    publishedAt: "2026-11-16",
+    productSlugs: [
+      "milk-frothing-pitcher",
+      "hoomil-12oz-pitcher",
+      "milk-pitcher-20oz",
+      "adorever-milk-frothing-pitcher",
+    ],
+    picks: [
+      {
+        productSlug: "milk-frothing-pitcher",
+        label: "Best 12oz all-rounder",
+        verdict:
+          "The Rattleware 12oz is the everyday pitcher for single cappuccinos and flat whites, with a latte-art style spout and durable stainless steel. Hand washing is recommended.",
+        pros: ["Latte-art style spout", "Durable stainless for daily use", "12oz suits single drinks"],
+        cons: ["Too small for two drinks", "Hand wash recommended"],
+        bestFor: "Anyone with a steam wand who wants to practice real milk texture.",
+      },
+      {
+        productSlug: "hoomil-12oz-pitcher",
+        label: "Best spare or starter",
+        verdict:
+          "A 304 stainless 12oz pitcher with interior volume marks that help dose milk. It works as a second pitcher or a starter, though the spout is less precise than the Rattleware.",
+        pros: ["Interior volume marks", "Dishwasher-safe stainless", "12oz size suits single drinks"],
+        cons: ["Spout less precise than Rattleware", "Entry-level build"],
+        bestFor: "Beginners and anyone who wants a spare 12oz pitcher.",
+      },
+      {
+        productSlug: "milk-pitcher-20oz",
+        label: "Best for two drinks",
+        verdict:
+          "The HOOMIL 20oz gives room for two cappuccinos or more forgiving latte art practice than a tight 12oz. It has a latte-art style spout and 304 stainless construction.",
+        pros: ["More volume for two drinks or practice pours", "Latte-art style spout", "Durable stainless"],
+        cons: ["Overkill for single flat whites", "Hand wash recommended"],
+        bestFor: "Milk-drink households that outgrew a 12oz pitcher.",
+      },
+      {
+        productSlug: "adorever-milk-frothing-pitcher",
+        label: "Best with art pen",
+        verdict:
+          "The Adorever is 304 stainless steel, comes with a latte art pen and is sold in several sizes from 8.5 oz to 66 oz. When we checked on Oct 3, 2026, it was #1 on Amazon's Best Sellers list for Espresso Steaming Pitchers.",
+        pros: ["Includes a latte art pen", "Several sizes available", "Welded handle joint"],
+        cons: ["Pick the size that matches your drinks", "Spout may suit practice more than precise art"],
+        bestFor: "Beginners who want a pitcher plus an art pen for latte practice.",
+      },
+    ],
+    criteria: {
+      heading: "What to look for in a steaming pitcher",
+      points: [
+        { title: "Size", body: "12oz suits one drink; 20oz suits two drinks or more forgiving practice. Fill to just below the spout base so the milk can swirl." },
+        { title: "Spout", body: "A sharper spout gives more control when pouring latte art. Rounder spouts are fine for texture and pouring into large mugs." },
+        { title: "Care", body: "Stainless is durable, but handwashing is recommended on several of these. Check the Amazon listing for care notes." },
+      ],
+    },
+    sections: [
+      {
+        heading: "How to choose",
+        body: "Single drinks and a steam wand: Rattleware 12oz. Spare or starter: HOOMIL 12oz. Two drinks: HOOMIL 20oz. Beginner kit with an art pen: Adorever. Confirm the size variant on the Amazon listing before you order.",
+      },
+    ],
+    seeAlso: [
+      { href: "/categories/frothers-accessories", label: "Frothers & accessories Top 10" },
+      { href: "/guides/best-milk-frothers-latte-art", label: "Best milk frothers for latte art" },
+    ],
+    faqs: [
+      {
+        question: "What size milk pitcher should I buy?",
+        answer: "A 12oz pitcher suits single drinks; a 20oz pitcher gives room for two drinks or easier practice.",
+      },
+      {
+        question: "Do I need a pitcher if I use a steam wand?",
+        answer: "A pitcher is how you control milk texture with a steam wand, so it is one of the first accessories to add.",
+      },
+    ],
+  },
+
 ];
 
 export function getGuide(slug: string): Guide | undefined {
